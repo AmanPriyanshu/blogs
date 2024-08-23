@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eilenberg-Mac Lane Spaces on Writing what I&#39;m learning</title>
-    <link>https://amanpriyanshu.github.io/tags/eilenberg-mac-lane-spaces/</link>
+    <link>https://amanpriyanshu.github.io/blogs/tags/eilenberg-mac-lane-spaces/</link>
     <description>Recent content in Eilenberg-Mac Lane Spaces on Writing what I&#39;m learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Fri, 01 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/tags/eilenberg-mac-lane-spaces/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/eilenberg-mac-lane-spaces/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The stable homotopy category</title>
-      <link>https://amanpriyanshu.github.io/posts/2021/the-stable-homotopy-category/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2021/the-stable-homotopy-category/</link>
       <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://amanpriyanshu.github.io/posts/2021/the-stable-homotopy-category/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2021/the-stable-homotopy-category/</guid>
       <description>A little while ago we discussed the definition of a tensor triangulated category, and in that post we mentioned an example that we didn&amp;rsquo;t explicitly define, namely the stable homotopy category. The goal for todays post is to fix this. There are many ways of defining it, and some are actually better than others. As the name suggests, the stable homotopy category is a homotopy category, which we have discussed before in the fibration series.</description>
     </item>
     
