@@ -11,7 +11,7 @@
 <meta name="author" content="Torgeir Aambø">
 <link rel="canonical" href="https://torgeiraamboe.github.io/posts/2021/spaces-with-operations/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.a1eeeda6e784196e37e722a47d42d7700cb45ab6319c25db704ad6e7029e4fbd.css" integrity="sha256-oe7tpueEGW435yKkfULXcAy0WrYxnCXbcErW5wKeT70=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
     onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://torgeiraamboe.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://torgeiraamboe.github.io/favicon-16x16.png">
@@ -20,7 +20,8 @@
 <link rel="mask-icon" href="https://torgeiraamboe.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.87.0" />
+<meta name="generator" content="Hugo 0.133.0">
+<link rel="alternate" hreflang="en" href="https://torgeiraamboe.github.io/posts/2021/spaces-with-operations/" />
 <head>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   
@@ -53,17 +54,6 @@
 </script>
 </head>
 
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BNDEZXCLMF"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-BNDEZXCLMF', { 'anonymize_ip': false });
-}
-</script>
 <meta property="og:title" content="Spaces with operations" />
 <meta property="og:description" content="In the most recent blog post we discussed homotopy associativity and how to transfer algebraic structures on topological spaces. There we in particular used topological groups, which are topological spaces with group structures. That said, any group is a topological group by equipping it with the discrete topology. So if we want to study some actual topology, and not just glorified group theory, we need to look at where multiplications and binary operations arise naturally in topology." />
 <meta property="og:type" content="article" />
@@ -71,7 +61,7 @@ if (!doNotTrack) {
 <meta property="og:image" content="https://torgeiraamboe.github.io/images/composition.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-04T00:00:00&#43;00:00" />
 <meta property="article:modified_time" content="2021-03-04T00:00:00&#43;00:00" />
-<meta property="og:see_also" content="https://torgeiraamboe.github.io/posts/2021/sha-algebras/" /><meta property="og:see_also" content="https://torgeiraamboe.github.io/posts/2021/the-associating-homotopy/" /><meta property="og:see_also" content="https://torgeiraamboe.github.io/posts/2021/homotopy-associativity/" />
+
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://torgeiraamboe.github.io/images/composition.png" />
@@ -109,8 +99,8 @@ if (!doNotTrack) {
   "keywords": [
     "A_infinity algebras", "H-spaces", "Loop spaces", "Operads"
   ],
-  "articleBody": "In the most recent blog post we discussed homotopy associativity and how to transfer algebraic structures on topological spaces. There we in particular used topological groups, which are topological spaces with group structures. That said, any group is a topological group by equipping it with the discrete topology. So if we want to study some actual topology, and not just glorified group theory, we need to look at where multiplications and binary operations arise naturally in topology.\nThe first place to start could maybe be Lie groups. These are manifolds with group structures, and are “more” topological than just all topological groups. Even though these groups are incredibly useful and have a rich theory associated to them, they are not the focus of this blog post. Actually having group structure is often too strict for situations where binary operations arise more naturally in topology, so let’s look at the bare minimum that we could have.\nH-spaces In topology we are fortunate enough to have a nice notion of homotopy. This we have discussed at length in the fibration series, which resulted in exploring some theory about model categories. In the homotopy category of topological spaces we argued that we can study homotopy classes of maps instead of inverted weak equivalences. This allows us to make some nice definitions of algebraic structures in the category of topological spaces. For example we can define a H-group to be a topological space with operations such that it is a group in the homotopy category. This allows for the operations to be invertible, associative and unital up to homotopy instead of on the nose. Here the “H” stands for Hopf, as in the mathematician Heinz Hopf, as the maybe intuitive name, homotopy group, is already occupied. We said we would look at the bare minimum, so instead of a H-group, we look at an H-space.\nDefinition:  An H-space is a topological space $X$, together with a binary operation $m$, that has a unit up to homotopy. Alternatively, it can be described as a space with the operation m such that it is a unital magma in the homotopy category.\nSome of the most famous examples are the spheres $S^0$, $S^1$, $S^3$ and $S^7$. These are H-spaces as they inherit an operation from the real division algebra they are the unit-length subset of. For example $S^3$ sits as the vectors in $\\mathbb{H}$, the quaternions, with length 1, and the other ones in $\\mathbb{R}$, $\\mathbb{C}$ and $\\mathbb{O}$ respectively. The first three are actually groups, making them Lie groups, but $\\mathbb{O}$ is non-associative, and hence $S^7$ is as well, so its not a group. The interesting fact that these four spheres are the only H-spaces is related to the famous Hopf invariant one problem, solved by Frank Adams.\nWe said we wanted to stay away from groups, but here we are, back again.. Let’s actually see a non-group example. The most important one for us will be loop spaces.\nLoop spaces Definition:  Let $(X, x)$ be a pointed topological space, abusively denoted just by $X$. The loop space of $X$, denoted $\\Omega X$, is defined to be the set of continuous maps $\\Omega X = \\{ f\\colon I\\longrightarrow X \\vert f(1)=x=f(0)\\}$, where $I$ is the unit interval. As the endpoints of the interval gets mapped to the same point we get a loop, hence the name.\nWe turn this into a H-space by defining our operation to be concatenation of loops. As two elements in $\\Omega X$ are two loops starting and ending at the same point $x$, we can simply join them to be a single loop that happens to pass through $x$ in the middle. More rigorously we define\n$$(g\\ast f) (t) = \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ g(2t-1), t\\in [1/2, 1] \\end{cases}$$\nThis makes $g\\ast f$ into a loop, i.e. a map from the interval to $X$ with value $x$ at the endpoints. This means that we traverse the first loop $f$ at double the speed, and then the second loop $g$ at double the speed. This is to make sure we have a map from the interval, and not from $[0, 2]$.\nSince it is supposed to be a H-space we need a (up to homotopy) unit. This is given by the constant loop at $x$, which we denote by $c_x$. As we have\n$$(c_x\\ast f) (t) = \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ c_x(2t-1) = x, t\\in [1/2, 1] \\end{cases}$$\nwe get a homotopy to the loop $f$ by just reparametrizing the intervals. The homotopy is a map $h\\colon I\\times I\\longrightarrow X$ such that $h(0, t) = c_x\\ast f$ and $h(1, t)=f$, and is given by $h(s, t)= (1-s)(c_x\\ast f)(t) + sf(t)$, or drawn graphically by the following square:\nNotice that composition of three loops $f$, $g$, $h$ can be done in two different ways. We can do $h\\ast(g\\ast f)$ or $(h\\ast g)\\ast f$. These are different because\n\\begin{aligned} ((h\\ast g)\\ast f) (t) \u0026= \\begin{cases} f(2t), t\\in [0, 1/2] \\\\\n(g\\ast h)(2t-1), t\\in [1/2, 1] \\end{cases} \\\\ \u0026= \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ g(2\\cdot(2t-1)), t\\in [1/2, 3/4] \\\\ h(2\\cdot(2t-1)-1), t\\in [3/4, 1] \\end{cases} \\\\ \u0026= \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ g(4t-2), t\\in [1/2, 3/4] \\\\ h(4t-3), t\\in [3/4, 1] \\end{cases} \\end{aligned}\nand\n\\begin{aligned} (h\\ast (g\\ast f)) (t) \u0026= \\begin{cases} (g\\ast f)(2t), t\\in [0, 1/2] \\\\ h(2t-1), t\\in [1/2, 1] \\end{cases} \\\\\n\u0026= \\begin{cases} f(2\\cdot2t), t\\in [0, 1/4] \\\\\ng(2\\cdot(2t-1)), t\\in [1/4, 1/2] \\\\\nh(2t-1), t\\in [1/2, 1] \\end{cases} \\\\\n\u0026= \\begin{cases} f(4t), t\\in [0, 1/4] \\\\\ng(4t-2), t\\in [1/4, 1/2] \\\\\nh(2t-1), t\\in [1/2, 1] \\end{cases} \\end{aligned}\nwhich seem similar, but are parametrized on the interval I differently. Fear not, these can also be reparametrized by a homotopy, so the concatenation of loops is associative up to homotopy! This homotopy can be drawn as follows:\nFrom last time we maybe remember what this means. Having a homotopy between the two ways of combining three elements with a product is the same as an action from the third Stasheff associahedra, $K3$:\nBy iteratively using this homotopy as well as higher dimensional reparametrization cubes on the different ways of using concatenation of loops on bigger and bigger sets of loops, we in fact get actions from all $Kn$. This means that a loop space is an example of an $A_\\infty$-space, which we defined last post as a space with an action from the Stasheff operad.\nIn a way it is also the only example, as a space $X$ is a loop space if and only if it is an $A_\\infty$-space and its monoid $\\pi_0(X)$ of connected components is a a group. We still haven’t properly defined $A_\\infty$-spaces and $A_\\infty$ structures, and we will not do so in this post either. Not even in the next post I think. But it is coming, sometime in the future. For now, whenever someone says $A_\\infty$-space, think about loop spaces, and these actions from the Stasheff associahedra.\nbody {text-align: justify}",
-  "wordCount" : "1155",
+  "articleBody": "In the most recent blog post we discussed homotopy associativity and how to transfer algebraic structures on topological spaces. There we in particular used topological groups, which are topological spaces with group structures. That said, any group is a topological group by equipping it with the discrete topology. So if we want to study some actual topology, and not just glorified group theory, we need to look at where multiplications and binary operations arise naturally in topology.\nThe first place to start could maybe be Lie groups. These are manifolds with group structures, and are “more” topological than just all topological groups. Even though these groups are incredibly useful and have a rich theory associated to them, they are not the focus of this blog post. Actually having group structure is often too strict for situations where binary operations arise more naturally in topology, so let’s look at the bare minimum that we could have.\nH-spaces In topology we are fortunate enough to have a nice notion of homotopy. This we have discussed at length in the fibration series, which resulted in exploring some theory about model categories. In the homotopy category of topological spaces we argued that we can study homotopy classes of maps instead of inverted weak equivalences. This allows us to make some nice definitions of algebraic structures in the category of topological spaces. For example we can define a H-group to be a topological space with operations such that it is a group in the homotopy category. This allows for the operations to be invertible, associative and unital up to homotopy instead of on the nose. Here the “H” stands for Hopf, as in the mathematician Heinz Hopf, as the maybe intuitive name, homotopy group, is already occupied. We said we would look at the bare minimum, so instead of a H-group, we look at an H-space.\nDefinition: An H-space is a topological space $X$, together with a binary operation $m$, that has a unit up to homotopy. Alternatively, it can be described as a space with the operation m such that it is a unital magma in the homotopy category.\nSome of the most famous examples are the spheres $S^0$, $S^1$, $S^3$ and $S^7$. These are H-spaces as they inherit an operation from the real division algebra they are the unit-length subset of. For example $S^3$ sits as the vectors in $\\mathbb{H}$, the quaternions, with length 1, and the other ones in $\\mathbb{R}$, $\\mathbb{C}$ and $\\mathbb{O}$ respectively. The first three are actually groups, making them Lie groups, but $\\mathbb{O}$ is non-associative, and hence $S^7$ is as well, so its not a group. The interesting fact that these four spheres are the only H-spaces is related to the famous Hopf invariant one problem, solved by Frank Adams.\nWe said we wanted to stay away from groups, but here we are, back again.. Let’s actually see a non-group example. The most important one for us will be loop spaces.\nLoop spaces Definition: Let $(X, x)$ be a pointed topological space, abusively denoted just by $X$. The loop space of $X$, denoted $\\Omega X$, is defined to be the set of continuous maps $\\Omega X = \\{ f\\colon I\\longrightarrow X \\vert f(1)=x=f(0)\\}$, where $I$ is the unit interval. As the endpoints of the interval gets mapped to the same point we get a loop, hence the name.\nWe turn this into a H-space by defining our operation to be concatenation of loops. As two elements in $\\Omega X$ are two loops starting and ending at the same point $x$, we can simply join them to be a single loop that happens to pass through $x$ in the middle. More rigorously we define\n$$(g\\ast f) (t) = \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ g(2t-1), t\\in [1/2, 1] \\end{cases}$$\nThis makes $g\\ast f$ into a loop, i.e. a map from the interval to $X$ with value $x$ at the endpoints. This means that we traverse the first loop $f$ at double the speed, and then the second loop $g$ at double the speed. This is to make sure we have a map from the interval, and not from $[0, 2]$.\nSince it is supposed to be a H-space we need a (up to homotopy) unit. This is given by the constant loop at $x$, which we denote by $c_x$. As we have\n$$(c_x\\ast f) (t) = \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ c_x(2t-1) = x, t\\in [1/2, 1] \\end{cases}$$\nwe get a homotopy to the loop $f$ by just reparametrizing the intervals. The homotopy is a map $h\\colon I\\times I\\longrightarrow X$ such that $h(0, t) = c_x\\ast f$ and $h(1, t)=f$, and is given by $h(s, t)= (1-s)(c_x\\ast f)(t) + sf(t)$, or drawn graphically by the following square:\nNotice that composition of three loops $f$, $g$, $h$ can be done in two different ways. We can do $h\\ast(g\\ast f)$ or $(h\\ast g)\\ast f$. These are different because\n\\begin{aligned} ((h\\ast g)\\ast f) (t) \u0026= \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ (g\\ast h)(2t-1), t\\in [1/2, 1] \\end{cases} \\\\ \u0026= \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ g(2\\cdot(2t-1)), t\\in [1/2, 3/4] \\\\ h(2\\cdot(2t-1)-1), t\\in [3/4, 1] \\end{cases} \\\\ \u0026= \\begin{cases} f(2t), t\\in [0, 1/2] \\\\ g(4t-2), t\\in [1/2, 3/4] \\\\ h(4t-3), t\\in [3/4, 1] \\end{cases} \\end{aligned}\nand\n\\begin{aligned} (h\\ast (g\\ast f)) (t) \u0026= \\begin{cases} (g\\ast f)(2t), t\\in [0, 1/2] \\\\ h(2t-1), t\\in [1/2, 1] \\end{cases} \\\\ \u0026= \\begin{cases} f(2\\cdot2t), t\\in [0, 1/4] \\\\ g(2\\cdot(2t-1)), t\\in [1/4, 1/2] \\\\ h(2t-1), t\\in [1/2, 1] \\end{cases} \\\\ \u0026= \\begin{cases} f(4t), t\\in [0, 1/4] \\\\ g(4t-2), t\\in [1/4, 1/2] \\\\ h(2t-1), t\\in [1/2, 1] \\end{cases} \\end{aligned}\nwhich seem similar, but are parametrized on the interval I differently. Fear not, these can also be reparametrized by a homotopy, so the concatenation of loops is associative up to homotopy! This homotopy can be drawn as follows:\nFrom last time we maybe remember what this means. Having a homotopy between the two ways of combining three elements with a product is the same as an action from the third Stasheff associahedra, $K3$:\nBy iteratively using this homotopy as well as higher dimensional reparametrization cubes on the different ways of using concatenation of loops on bigger and bigger sets of loops, we in fact get actions from all $Kn$. This means that a loop space is an example of an $A_\\infty$-space, which we defined last post as a space with an action from the Stasheff operad.\nIn a way it is also the only example, as a space $X$ is a loop space if and only if it is an $A_\\infty$-space and its monoid $\\pi_0(X)$ of connected components is a a group. We still haven’t properly defined $A_\\infty$-spaces and $A_\\infty$ structures, and we will not do so in this post either. Not even in the next post I think. But it is coming, sometime in the future. For now, whenever someone says $A_\\infty$-space, think about loop spaces, and these actions from the Stasheff associahedra.\n",
+  "wordCount" : "1152",
   "inLanguage": "en",
   "image":"https://torgeiraamboe.github.io/images/composition.png","datePublished": "2021-03-04T00:00:00Z",
   "dateModified": "2021-03-04T00:00:00Z",
@@ -208,6 +198,8 @@ if (!doNotTrack) {
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
             </span>
         </div>
         <ul id="menu">
@@ -252,7 +244,7 @@ if (!doNotTrack) {
     <h1 class="post-title">
       Spaces with operations
     </h1>
-    <div class="post-meta">March 4, 2021&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Torgeir Aambø
+    <div class="post-meta">March 4, 2021&amp;nbsp;·&amp;nbsp;6 min&amp;nbsp;·&amp;nbsp;Torgeir Aambø
 </div>
   </header> <div class="toc">
     <details >
@@ -296,7 +288,7 @@ if (!doNotTrack) {
 ((h\ast g)\ast f) (t)
 &amp;=
 \begin{cases}
-f(2t), t\in [0, 1/2] \\<br>
+f(2t), t\in [0, 1/2] \\
 (g\ast h)(2t-1), t\in [1/2, 1]
 \end{cases} \\
 &amp;=
@@ -319,17 +311,17 @@ h(4t-3), t\in [3/4, 1]
 \begin{cases}
 (g\ast f)(2t), t\in [0, 1/2] \\
 h(2t-1), t\in [1/2, 1]
-\end{cases} \\<br>
+\end{cases} \\
 &amp;=
 \begin{cases}
-f(2\cdot2t), t\in [0, 1/4] \\<br>
-g(2\cdot(2t-1)), t\in [1/4, 1/2] \\<br>
+f(2\cdot2t), t\in [0, 1/4] \\
+g(2\cdot(2t-1)), t\in [1/4, 1/2] \\
 h(2t-1), t\in [1/2, 1]
-\end{cases} \\<br>
+\end{cases} \\
 &amp;=
 \begin{cases}
-f(4t), t\in [0, 1/4] \\<br>
-g(4t-2), t\in [1/4, 1/2] \\<br>
+f(4t), t\in [0, 1/4] \\
+g(4t-2), t\in [1/4, 1/2] \\
 h(2t-1), t\in [1/2, 1]
 \end{cases}
 \end{aligned}</p>
@@ -345,9 +337,9 @@ h(2t-1), t\in [1/2, 1]
 </div>
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://torgeiraamboe.github.io/tags/a_infinity-algebras/">A_infinity algebras</a></li>
-      <li><a href="https://torgeiraamboe.github.io/tags/h-spaces/">H-spaces</a></li>
-      <li><a href="https://torgeiraamboe.github.io/tags/loop-spaces/">Loop spaces</a></li>
+      <li><a href="https://torgeiraamboe.github.io/tags/a_infinity-algebras/">A_infinity Algebras</a></li>
+      <li><a href="https://torgeiraamboe.github.io/tags/h-spaces/">H-Spaces</a></li>
+      <li><a href="https://torgeiraamboe.github.io/tags/loop-spaces/">Loop Spaces</a></li>
       <li><a href="https://torgeiraamboe.github.io/tags/operads/">Operads</a></li>
     </ul>
 <nav class="paginav">
