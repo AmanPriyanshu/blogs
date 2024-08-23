@@ -1,11 +1,9 @@
-baseURL: "https://torgeiraamboe.github.io/"
+baseURL: "https://amanpriyanshu.github.io/"
 title: Writing what I'm learning
 paginate: 10
 theme: PaperMod
 copyright: " "
 publishDir: docs
-googleAnalytics: G-BNDEZXCLMF
-disqusShortname: torgeiraamboe
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -31,7 +29,7 @@ outputs:
 menu:
     main:
       - name: My homepage
-        url: "https://folk.ntnu.no/torgeaam/"
+        url: "https://amanpriyanshu.github.io/home/"
         weight: 5     
       - name: Categories
         url: categories/
@@ -55,7 +53,7 @@ menu:
 params:
     # env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: ""
-    author: Torgeir Aambø
+    author: Aman Priyanshu
     # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
@@ -92,14 +90,14 @@ params:
             On here I write my way through my mathematical endevours, mostly focusing on algebraic topology, but also other things that interests me.
 
     socialIcons:
-        - name: buymeacoffee
-          url: "https://www.buymeacoffee.com/aamboe"  
         - name: LinkedIn
-          url: "https://www.linkedin.com/in/torgeir-aamb%C3%B8/"
+          url: "https://www.linkedin.com/in/aman-priyanshu/"
         - name: Email
-          url: "mailto:torgeiraamboe@gmail.com"
+          url: "mailto:amanpriyanshusms2001@gmail.com"
         - name: github
-          url: "https://github.com/torgeiraamboe"        
+          url: "https://github.com/AmanPriyanshu"  
+        - name: twitter
+          url: "https://twitter.com/AmanPriyanshu6"        
 
 
     # label:
