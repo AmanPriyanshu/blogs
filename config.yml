@@ -29,7 +29,7 @@ outputs:
 menu:
     main:
       - name: My homepage
-        url: "https://amanpriyanshu.github.io/home/"
+        url: "https://amanpriyanshu.github.io/"
         weight: 5     
       - name: Categories
         url: categories/
