@@ -3,14 +3,14 @@ title: "FRACTURED-SORRY-Bench: Unraveling AI Safety through Nature-Inspired Tech
 date: 2024-08-28
 draft: false
 categories: ["AI Security", "Bio-Inspired Computing"]
-tags: ["FRACTURED-SORRY-Bench", "AI Safety", "Jailbreaks", "Biomimicry"]
+tags: ["FRACTURED-SORRY-Bench", "AI Safety", "Jailbreaks", "Prompt-Injections"]
 cover:
     image: "images/fractured_sorry_bench.png"
 ---
 
 # FRACTURED-SORRY-Bench: When Nature Meets AI Safety
 
-Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the [website](https://amanpriyanshu.github.io/FRACTURED-SORRY-Bench/) for the dataset!
+Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the [website](https://amanpriyanshu.github.io/FRACTURED-SORRY-Bench/) and [github](https://github.com/AmanPriyanshu/FRACTURED-SORRY-Bench/) for the dataset!
 
 ## The FRACTURED-SORRY Saga: A Tale of Adaptation and Decomposition
 
@@ -61,6 +61,8 @@ So, what can we learn from this decomposed madness? A few key takeaways:
 ## Conclusion: The Adventure Continues
 
 As we wrap up this whirlwind tour of FRACTURED-SORRY-Bench, remember that the quest for AI safety is an ongoing journey!!
+
+Also, thanks a tonne! to my co-author [**Supriti Vijay**](https://supritivijay.github.io)
 
 ---
 
