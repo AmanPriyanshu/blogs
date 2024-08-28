@@ -1,5 +1,5 @@
 baseURL: "https://amanpriyanshu.github.io/blogs/"
-title: Writing what I'm learning
+title: Decoding AI's Evolution
 paginate: 10
 theme: PaperMod
 copyright: " "
@@ -84,10 +84,9 @@ params:
 
     
     homeInfoParams:
-        Title: Hi!
+        Title: Greetings, Programs!!
         Content: >
-            Welcome to my mathematics blog. 
-            On here I write my way through my mathematical endevours, mostly focusing on algebraic topology, but also other things that interests me.
+            Welcome to my digital arena where I want to explore the evolving world of AI with my special twists and turns. There'll be safety stuff, privacy stuff, and bio-inspirations that bridge the gap between silicon and synapse.
 
     socialIcons:
         - name: LinkedIn
