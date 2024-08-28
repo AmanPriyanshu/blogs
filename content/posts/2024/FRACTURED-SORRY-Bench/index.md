@@ -1,5 +1,5 @@
 ---
-title: "FRACTURED-SORRY-Bench: Unraveling AI Safety through Nature-Inspired Techniques"
+title: "FRACTURED-SORRY-Bench: Unraveling AI Safety through Decomposing Malicious Intents"
 date: 2024-08-28
 draft: false
 categories: ["AI Security", "Bio-Inspired Computing"]
@@ -8,7 +8,7 @@ cover:
     image: "images/fractured_sorry_bench.png"
 ---
 
-# FRACTURED-SORRY-Bench: When Nature Meets AI Safety
+# FRACTURED-SORRY-Bench: When Decomposition Meets AI Safety
 
 Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the [website](https://amanpriyanshu.github.io/FRACTURED-SORRY-Bench/) and [github](https://github.com/AmanPriyanshu/FRACTURED-SORRY-Bench/) for the dataset!
 
