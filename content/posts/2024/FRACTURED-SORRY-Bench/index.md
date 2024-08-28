@@ -60,7 +60,8 @@ So, what can we learn from this decomposed madness? A few key takeaways:
 
 ## Conclusion: The Adventure Continues
 
-As we wrap up this whirlwind tour of FRACTURED-SORRY-Bench, remember that the quest for AI safety is an ongoing journey.!!
+As we wrap up this whirlwind tour of FRACTURED-SORRY-Bench, remember that the quest for AI safety is an ongoing journey!!
+
 ---
 
 *P.S. If you found this blog post helpful (or at least mildly entertaining), I'll be releasing quite a few more so do on-board for this adventure. Also, if you want to chat or collaborate on a research project together do not hesitate to reach out. My email is: amanpriyanshusms2001[at]gmail[dot]com* 🔬
