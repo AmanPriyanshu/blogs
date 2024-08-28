@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Safety on Writing what I&#39;m learning</title>
+    <link>https://amanpriyanshu.github.io/blogs/tags/ai-safety/</link>
+    <description>Recent content in AI Safety on Writing what I&#39;m learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright> </copyright>
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/ai-safety/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FRACTURED-SORRY-Bench: Unraveling AI Safety through Nature-Inspired Techniques</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</guid>
+      <description>FRACTURED-SORRY-Bench: When Nature Meets AI Safety Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released.
+The FRACTURED-SORRY Saga: A Tale of Adaptation and Decomposition Picture this: you&amp;rsquo;re wandering through the lush collection of prompt-injection and llm-red-teaming papers, marveling at some of the weird and some of the crazier attack mechanisms that have been released recently. When suddenly, you realize that there aren&amp;rsquo;t many Proof-of-Concept resources for multi-shot red-teaming.</description>
+    </item>
+    
+  </channel>
+</rss>
