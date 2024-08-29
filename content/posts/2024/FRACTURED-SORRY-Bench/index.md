@@ -67,7 +67,7 @@ Here's a taste of what we found:
 - A significant increase in Attack Success Rate (ASR) on average 6x 
 - Simple exploits that are zero-shot effective in communicating harmful intent in 49% of cases through decomposition
 
-During my summer internship at Robust Intelligence, I got a firsthand look at how these kinds of vulnerabilities are discovered and addressed [Media Coverage](https://www.theregister.com/2024/07/29/meta_ai_safety/) [Jailbreak Meta's Prompt-Guard LLaMA3.1 Family within 24 hours](https://www.robustintelligence.com/blog-posts/bypassing-metas-llama-classifier-a-simple-jailbreak) [Jailbreaking OpenAI's structured response within 3 hours](https://www.robustintelligence.com/blog-posts/bypassing-openais-structured-outputs-jailbreak). Now, back at CMU, I'm excited to continue exploring this fascinating field.
+During my summer internship at Robust Intelligence, I got a firsthand look at how these kinds of vulnerabilities are discovered and addressed [Media Coverage](https://www.theregister.com/2024/07/29/meta_ai_safety/), [Jailbreak Meta's Prompt-Guard LLaMA3.1 Family within 24 hours](https://www.robustintelligence.com/blog-posts/bypassing-metas-llama-classifier-a-simple-jailbreak), and [Jailbreaking OpenAI's structured response within 3 hours](https://www.robustintelligence.com/blog-posts/bypassing-openais-structured-outputs-jailbreak). Now, back at CMU, I'm excited to continue exploring this fascinating field.
 
 ## The Moral of the Story: Stay FRACTURED, My Friends
 
