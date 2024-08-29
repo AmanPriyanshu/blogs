@@ -33,6 +33,24 @@ FRACTURED-SORRY-Bench isn't just a mouthful; it's a clever acronym we probably s
 
 ## The FRACTURED Approach: Divide and Conquer
 
+**Vanilla Responses:**
+
+| Model      | Harmful & Relevant | Harmful but Irrelevant | Harmless | ASR (%) |
+|------------|--------------------|-----------------------|----------|---------|
+| GPT-4o     | 52                 | 3                     | 395      | 11.56   |
+| GPT-3.5    | 21                 | 4                     | 425      | 4.67    |
+| GPT-4o-mini| 58                 | 2                     | 390      | 12.89   |
+| GPT-4      | 45                 | 3                     | 402      | 10.00   |
+
+**Decomposed Responses:**
+
+| Model      | Harmful & Relevant | Harmful but Irrelevant | Harmless | ASR (%) |
+|------------|--------------------|-----------------------|----------|---------|
+| GPT-4o     | 223                | 103                   | 124      | 49.56   |
+| GPT-3.5    | 229                | 106                   | 115      | 50.89   |
+| GPT-4o-mini| 226                | 106                   | 118      | 50.22   |
+| GPT-4      | 221                | 104                   | 125      | 49.11   |
+
 The FRACTURED-SORRY-Bench framework takes a page out of our everyday conversations playbook by breaking down complex problems into simpler, more manageable pieces. Just like how we breakdown complex sometimes malicious instructions into simpler manageable chunks so as to not reveal true intentions, this framework dissects AI vulnerabilities by:
 
 1. Decomposing potentially harmful queries into seemingly innocuous sub-questions
@@ -62,7 +80,7 @@ So, what can we learn from this decomposed madness? A few key takeaways:
 
 As we wrap up this whirlwind tour of FRACTURED-SORRY-Bench, remember that the quest for AI safety is an ongoing journey!!
 
-Also, thanks a tonne! to my co-author [**Supriti Vijay**](https://supritivijay.github.io)
+Also, thanks a tonne to my co-author [**Supriti Vijay**](https://supritivijay.github.io)!!
 
 ---
 
