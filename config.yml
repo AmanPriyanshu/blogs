@@ -37,8 +37,8 @@ menu:
       - name: Tags
         url: tags/
         weight: 15   
-      - name: Series
-        url: series/
+      - name: My Personal Model Picks
+        url: "https://amanpriyanshu.github.io/My-Personal-Model-Picks/"
         weight: 20               
       - name: Archive
         url: archives/
