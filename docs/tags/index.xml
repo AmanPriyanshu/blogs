@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Decoding AI&#39;s Evolution</title>
-    <link>http://localhost:1313/blogs/tags/</link>
+    <link>https://amanpriyanshu.github.io/blogs/tags/</link>
     <description>Recent content in Tags on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Safety</title>
-      <link>http://localhost:1313/blogs/tags/ai-safety/</link>
+      <link>https://amanpriyanshu.github.io/blogs/tags/ai-safety/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/tags/ai-safety/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/tags/ai-safety/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FRACTURED-SORRY-Bench</title>
-      <link>http://localhost:1313/blogs/tags/fractured-sorry-bench/</link>
+      <link>https://amanpriyanshu.github.io/blogs/tags/fractured-sorry-bench/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/tags/fractured-sorry-bench/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/tags/fractured-sorry-bench/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jailbreaks</title>
-      <link>http://localhost:1313/blogs/tags/jailbreaks/</link>
+      <link>https://amanpriyanshu.github.io/blogs/tags/jailbreaks/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/tags/jailbreaks/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/tags/jailbreaks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Prompt-Injections</title>
-      <link>http://localhost:1313/blogs/tags/prompt-injections/</link>
+      <link>https://amanpriyanshu.github.io/blogs/tags/prompt-injections/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/tags/prompt-injections/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/tags/prompt-injections/</guid>
       <description></description>
     </item>
     
