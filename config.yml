@@ -15,7 +15,6 @@ enableEmoji: true
 
 minify:
     disableXML: true
-    # minifyOutput: true
 
 
 
@@ -51,13 +50,10 @@ menu:
 
 
 params:
-    # env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: ""
     author: Aman Priyanshu
-    # author: ["Me", "You"] # multiple authors
 
     defaultTheme: auto
-    # disableThemeToggle: true
     ShowShareButtons: true
     ShowReadingTime: true
     disableSpecial1stPost: true
@@ -68,19 +64,6 @@ params:
     cover:
         responsiveImages: false
         hiddenInSingle: true 
-    # hidesummary: true
-    # comments: true
-
-    # images: ["papermod-cover.png"]
-
-    #profileMode:
-    #      enabled: false
-    #      title: Torgeir Aambø
-    #      imageUrl: "0torgeir-1.png"
-    #      imageTitle: my image
-    #      imageWidth: 265
-    #      imageHeight: 310
-    #      subtitle: "Master student in mathematics"
 
     
     homeInfoParams:
@@ -98,33 +81,6 @@ params:
         - name: twitter
           url: "https://twitter.com/AmanPriyanshu6"        
 
-
-    # label:
-    #     text: "Home"
-    #     icon: icon.png
-    #     iconHeight: 35
-
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: "Boi"
-
-    # assets:
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
-
-
-    # fuseOpts:
-    #     isCaseSensitive: false
-    #     shouldSort: true
-    #     location: 0
-    #     distance: 1000
-    #     threshold: 0.4
-    #     minMatchCharLength: 0
-    #     keys: ["title", "permalink", "summary", "content"]
-
 taxonomies:
     category: categories
     tag: tags
@@ -134,36 +90,5 @@ markup:
      goldmark:
         renderer:
             unsafe: true
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         # noClasses: false
-#         style: monokai
-
-#privacy:
-#    vimeo:
-#        disabled: false
-#        simple: true
-
-#    twitter:
-#        disabled: false
-#        enableDNT: true
-#        simple: true
-
-#    instagram:
-#        disabled: false
-#        simple: true
-
-#    youtube:
-#        disabled: false
-#        privacyEnhanced: true
-
-#services:
-#    instagram:
-#        disableInlineCSS: true
-#    twitter:
-#        disableInlineCSS: true
 
     
