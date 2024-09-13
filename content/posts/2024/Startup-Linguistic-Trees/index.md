@@ -35,7 +35,7 @@ Remember that time you tried to explain your startup idea and accidentally descr
 
 But here's the kicker – I've gone full-on privacy nerd with this one. 🕵️‍♂️ I've created an on-prem, user-browser live semantic search that runs entirely within static GitHub pages. That's right, we're bringing the power of semantic search right to your browser, no server required!
 
-How does it work? Well, I download a huggingface local model onto your browser, and you do all the computing right there on your machine. It's like having a mini AI assistant camping out in your browser tabs. No need to worry about your brilliant startup ideas being sent off to some mysterious cloud server. Your searches stay between you, your computer, and the linguistic forest we're growing together.
+How does it work? Well, I download a huggingface local model onto your browser, and you do all the computing right there on your machine (_Also if you do wanna deep dive into my other LLM safety work, you can check out the [fractured response blog, on decomposing malicious intent questions and jailbreaking LLMs](https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/)_). It's like having a mini AI assistant camping out in your browser tabs. No need to worry about your brilliant startup ideas being sent off to some mysterious cloud server. Your searches stay between you, your computer, and the linguistic forest we're growing together.
 
 ### Interactive Scatterplots: Where Pitches Go to Party
 
