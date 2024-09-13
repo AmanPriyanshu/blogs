@@ -1,6 +1,6 @@
 ---
 title: "YC-Dendrolinguistics: Planting Linguistic Trees in the Startup Forest"
-date: 2024-09-15
+date: 2024-09-12
 draft: false
 categories: ["AI Research", "Startups", "Linguistics"]
 tags: ["YC", "Natural Language Processing", "Data Visualization", "On-Prem", "Search", "Bio-Inspired Computing"]
