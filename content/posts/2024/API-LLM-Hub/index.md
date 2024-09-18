@@ -10,6 +10,8 @@ cover:
 
 Hey there, fellow code enthusiasts and AI wranglers! 🖐️🤖 You know that feeling when you're knee-deep in a project, trying to get multiple AI models to play nice in your browser? Yeah, I've been there. Cue the frustrated sighs, the endless searches over GitHub issues 😢, and the "why-isn't-this-working" hair-pulling sessions.
 
+[**LINK-TO-PACKAGE**](https://amanpriyanshu.github.io/API-LLM-Hub/) **just in case you wanna skip the deets**
+
 After one too many nights wrestling with backends, CORS issues, and the general chaos of integrating various AI APIs, I decided enough was enough. There had to be a simpler way, right? Something that didn't require installing a bunch of npm builds, juggling APIs, or managing a backend server farm just to get a chatbot running on a static page.
 
 Turns out, there wasn't a simple solution – shocking, I know. So, armed with nothing but sleeplessness and caffeine, I decided to build it myself. Enter API-LLM-Hub: my first rodeo in JavaScript packaging and a testament to what happens when a Python AI nerd ventures into the wild west of front-end development. It's been a painful journey figuring out things which I have kept stalling all through my undergrad. But hey, if I can wrangle this into existence while learning what a promise is, I can probably claim 'Full-Stack' on my resume now! 🍪💻🚀
