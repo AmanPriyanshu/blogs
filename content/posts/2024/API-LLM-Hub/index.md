@@ -14,6 +14,11 @@ After one too many nights wrestling with backends, CORS issues, and the general 
 
 Turns out, there wasn't a simple solution – shocking, I know. So, armed with nothing but sleeplessness and caffeine, I decided to build it myself. Enter API-LLM-Hub: my first rodeo in JavaScript packaging and a testament to what happens when a Python AI nerd ventures into the wild west of front-end development. It's been a painful journey figuring out things which I have kept stalling all through my undergrad. But hey, if I can wrangle this into existence while learning what a promise is, I can probably claim 'Full-Stack' on my resume now! 🍪💻🚀
 
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://amanpriyanshu.github.io/API-LLM-Hub/assets/main.png" alt="Running Demo 1" style="width: 48%;"/>
+  <img src="https://amanpriyanshu.github.io/API-LLM-Hub/assets/output_demo_1.png" alt="Running Demo 2" style="width: 48%;"/>
+</div>
+
 ## The Spark of Inspiration
 
 Ever tried juggling multiple AI APIs in a browser? 😃 
