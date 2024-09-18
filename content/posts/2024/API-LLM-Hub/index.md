@@ -23,11 +23,11 @@ Turns out, there wasn't a simple solution – shocking, I know. So, armed with n
 
 Ever tried juggling multiple AI APIs in a browser? 😃 
 
-It's about as fun as catching Zapdos with a normal ball in FireRed. That's why I cooked up API-LLM-Hub – a vanilla JavaScript library that lets you tap into various AI language model APIs right from your browser, no backend required.
+It's about as fun as catching Zapdos with a normal ball in FireRed. That's why I cooked up [API-LLM-Hub](https://amanpriyanshu.github.io/API-LLM-Hub/) – a vanilla JavaScript library that lets you tap into various AI language model APIs right from your browser, no backend required.
 
 ## What's in the Box?
 
-API-LLM-Hub is like that Swiss Army knife you always wished you had for static-page AI development (because who doesn't dream about that, right?). Here's what you're getting:
+[API-LLM-Hub](https://amanpriyanshu.github.io/API-LLM-Hub/) is like that Swiss Army knife you always wished you had for static-page AI development (because who doesn't dream about that, right?). Here's what you're getting:
 
 1. **Browser Besties**: This thing runs directly in your browser. No server-side shenanigans required!
 2. **CORS Conqueror**: I nearly cried dealing with Anthropic's bizarre API examples—especially since they don't have any for CORS issues!
