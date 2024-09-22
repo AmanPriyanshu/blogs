@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keyword Extraction on Decoding AI&#39;s Evolution</title>
+    <link>https://amanpriyanshu.github.io/blogs/tags/keyword-extraction/</link>
+    <description>Recent content in Keyword Extraction on Decoding AI&#39;s Evolution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright> </copyright>
+    <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/keyword-extraction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</link>
+      <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</guid>
+      <description>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction Quick links (in case you want to skip my ramblings):
+PyPI Package GitHub Repository
+Alright, gather &amp;lsquo;round, word enthusiasts and syntax sorcerers! 🧙‍♂️📚 Remember that time you tried to explain machine learning to your grandma and ended up comparing neural networks to her knitting patterns? Well, buckle up, because we&amp;rsquo;re about to dive into a similar realm of &amp;ldquo;What was I thinking?&amp;rdquo; – the saga of AdaptKeyBERT.</description>
+    </item>
+    
+  </channel>
+</rss>
