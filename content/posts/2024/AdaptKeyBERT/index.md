@@ -2,8 +2,8 @@
 title: "AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction"
 date: 2024-09-22
 draft: false
-categories: ["AI Research", "Natural Language Processing"]
-tags: ["AdaptKeyBERT", "Keyword Extraction", "Domain Adaptation", "NLP"]
+categories: ["AI Research", "Natural Language Processing", "AI Development"]
+tags: ["AdaptKeyBERT", "Keyword Extraction", "Domain Adaptation", "NLP", "Zero-Shot", "Few-Shot"]
 cover:
     image: "images/adaptkeybert_revisited.png"
 ---

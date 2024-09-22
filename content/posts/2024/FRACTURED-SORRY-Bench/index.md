@@ -2,8 +2,8 @@
 title: "FRACTURED-SORRY-Bench: Unraveling AI Safety through Decomposing Malicious Intents"
 date: 2024-08-28
 draft: false
-categories: ["AI Security", "Bio-Inspired Computing"]
-tags: ["FRACTURED-SORRY-Bench", "AI Safety", "Jailbreaks", "Prompt-Injections"]
+categories: ["AI Security", "Bio-Inspired Computing", "AI Research"]
+tags: ["FRACTURED-SORRY-Bench", "AI Safety", "Jailbreaks", "Prompt-Injections", "NLP"]
 cover:
     image: "images/fractured_sorry_bench.png"
 ---

@@ -3,7 +3,7 @@ title: "API-LLM-Hub: Simplifying LLM-API integration for Static Pages"
 date: 2024-09-18
 draft: false
 categories: ["AI Development", "Web Technologies"]
-tags: ["API-LLM-Hub", "Browser AI", "JavaScript", "OpenAI", "Anthropic", "TogetherAI", "Google Gemini", "Natural Language Processing"]
+tags: ["API-LLM-Hub", "Browser AI", "JavaScript", "OpenAI", "Anthropic", "TogetherAI", "Google Gemini", "NLP"]
 cover:
     image: "images/api-llm-hub-demo.png"
 ---

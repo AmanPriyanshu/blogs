@@ -39,5 +39,15 @@ The Seed of an Idea Picture this: It&amp;rsquo;s 2 AM, I&amp;rsquo;m knee-deep i
 The Knowledge Synapse Picture me back in 2019, a wide-eyed novice bouncing around the vast landscape of machine learning. I was devouring every GitHub gist, Medium post, and arXiv paper I could find, growing and learning at a dizzying pace.</description>
     </item>
     
+    <item>
+      <title>FRACTURED-SORRY-Bench: Unraveling AI Safety through Decomposing Malicious Intents</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</guid>
+      <description>FRACTURED-SORRY-Bench: When Decomposition Meets AI Safety Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the dataset, website, and github for the dataset!
+The FRACTURED-SORRY Saga: A Tale of Adaptation and Decomposition Picture this: you&amp;rsquo;re wandering through the lush collection of prompt-injection and llm-red-teaming papers, marveling at some of the weird and some of the crazier attack mechanisms that have been released recently.</description>
+    </item>
+    
   </channel>
 </rss>
