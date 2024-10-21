@@ -8,8 +8,6 @@ cover:
     image: "images/linearcosine-benchmark.png"
 ---
 
-# LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream
-
 Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we're diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore [LinearCosine, an experiment that asks: "Do we really need multiplication for AI?"](https://amanpriyanshu.github.io/LinearCosine/)
 
 **Quick Links to skip the talk:**

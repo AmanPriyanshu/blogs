@@ -8,8 +8,6 @@ cover:
     image: "images/adaptkeybert_revisited.png"
 ---
 
-# AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction
-
 <div style="display: flex; justify-content: space-between;">
   <img src="https://amanpriyanshu.github.io/AdaptKeyBERT/images/adaptkeybert_revisited.png" alt="Running Demo 1" style="width: 90%;"/>
 </div>

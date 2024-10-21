@@ -8,8 +8,6 @@ cover:
     image: "images/fractured_sorry_bench.png"
 ---
 
-# FRACTURED-SORRY-Bench: When Decomposition Meets AI Safety
-
 Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the [dataset](https://huggingface.co/datasets/AmanPriyanshu/FRACTURED-SORRY-Bench), [website](https://amanpriyanshu.github.io/FRACTURED-SORRY-Bench/), and [github](https://github.com/AmanPriyanshu/FRACTURED-SORRY-Bench/) for the dataset!
 
 ## The FRACTURED-SORRY Saga: A Tale of Adaptation and Decomposition

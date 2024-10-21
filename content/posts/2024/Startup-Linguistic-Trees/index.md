@@ -8,8 +8,6 @@ cover:
     image: "images/startup_forests.png"
 ---
 
-# YC-Dendrolinguistics: Planting Linguistic Trees in the Startup Forest
-
 Hey there, fellow AI adventurers and startup enthusiasts! 🌳🚀 Today, I'm excited to give you a peek into my latest passion project: YC-Dendrolinguistics. Buckle up as we embark on a journey through the linguistic forests of Y-Combinator pitches!
 
 ## The Seed of an Idea

@@ -14,9 +14,10 @@
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       
       <guid>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</guid>
-      <description>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction Quick links (in case you want to skip my ramblings):
+      <description>Quick links (in case you want to skip my ramblings):
 PyPI Package GitHub Repository
-Alright, gather &amp;lsquo;round, word enthusiasts and syntax sorcerers! 🧙‍♂️📚 Remember that time you tried to explain machine learning to your grandma and ended up comparing neural networks to her knitting patterns? Well, buckle up, because we&amp;rsquo;re about to dive into a similar realm of &amp;ldquo;What was I thinking?&amp;rdquo; – the saga of AdaptKeyBERT.</description>
+Alright, gather &amp;lsquo;round, word enthusiasts and syntax sorcerers! 🧙‍♂️📚 Remember that time you tried to explain machine learning to your grandma and ended up comparing neural networks to her knitting patterns? Well, buckle up, because we&amp;rsquo;re about to dive into a similar realm of &amp;ldquo;What was I thinking?&amp;rdquo; – the saga of AdaptKeyBERT.
+It&amp;rsquo;s been two trips around the sun since I cobbled together this quirky little keyword extractor and sent it off into the wild world of NLP.</description>
     </item>
     
   </channel>
