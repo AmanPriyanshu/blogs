@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream | Decoding AI&#39;s Evolution</title>
+<meta name="keywords" content="LinearCosine, L-Mul Algorithm, Cosine Similarity, Energy-Efficient AI, Benchmarking, Green-AI" />
+<meta name="description" content="LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore LinearCosine, an experiment that asks: &ldquo;Do we really need multiplication for AI?&rdquo;
+Quick Links to skip the talk: Project Website - Linear Cosine | GitHub Repo | Original Paper
+The Paper That Started It All During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled &ldquo;Addition is All You Need for Energy-efficient Language Models&rdquo;.">
+<meta name="author" content="Aman Priyanshu">
+<link rel="canonical" href="https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/" />
+<link crossorigin="anonymous" href="/blogs/assets/css/stylesheet.min.a1eeeda6e784196e37e722a47d42d7700cb45ab6319c25db704ad6e7029e4fbd.css" integrity="sha256-oe7tpueEGW435yKkfULXcAy0WrYxnCXbcErW5wKeT70=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/blogs/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://amanpriyanshu.github.io/blogs/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://amanpriyanshu.github.io/blogs/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://amanpriyanshu.github.io/blogs/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://amanpriyanshu.github.io/blogs/apple-touch-icon.png">
+<link rel="mask-icon" href="https://amanpriyanshu.github.io/blogs/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.133.1">
+<link rel="alternate" hreflang="en" href="https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/" />
+<head>
+
+
+
+
+
+
+</head>
+
+<meta property="og:title" content="LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream" />
+<meta property="og:description" content="LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore LinearCosine, an experiment that asks: &ldquo;Do we really need multiplication for AI?&rdquo;
+Quick Links to skip the talk: Project Website - Linear Cosine | GitHub Repo | Original Paper
+The Paper That Started It All During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled &ldquo;Addition is All You Need for Energy-efficient Language Models&rdquo;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/" />
+<meta property="og:image" content="https://amanpriyanshu.github.io/blogs/images/linearcosine-benchmark.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-10-21T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2024-10-21T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://amanpriyanshu.github.io/blogs/images/linearcosine-benchmark.png" />
+<meta name="twitter:title" content="LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream"/>
+<meta name="twitter:description" content="LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore LinearCosine, an experiment that asks: &ldquo;Do we really need multiplication for AI?&rdquo;
+Quick Links to skip the talk: Project Website - Linear Cosine | GitHub Repo | Original Paper
+The Paper That Started It All During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled &ldquo;Addition is All You Need for Energy-efficient Language Models&rdquo;."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://amanpriyanshu.github.io/blogs/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream",
+      "item": "https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream",
+  "name": "LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream",
+  "description": "LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we\u0026rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore LinearCosine, an experiment that asks: \u0026ldquo;Do we really need multiplication for AI?\u0026rdquo;\nQuick Links to skip the talk: Project Website - Linear Cosine | GitHub Repo | Original Paper\nThe Paper That Started It All During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled \u0026ldquo;Addition is All You Need for Energy-efficient Language Models\u0026rdquo;.",
+  "keywords": [
+    "LinearCosine", "L-Mul Algorithm", "Cosine Similarity", "Energy-Efficient AI", "Benchmarking", "Green-AI"
+  ],
+  "articleBody": "LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we’re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore LinearCosine, an experiment that asks: “Do we really need multiplication for AI?”\nQuick Links to skip the talk: Project Website - Linear Cosine | GitHub Repo | Original Paper\nThe Paper That Started It All During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled “Addition is All You Need for Energy-efficient Language Models”. I was immediately intrigued by their approach to modify one of the core fundamental computations in AI, multiplication. This project builds upon my previous work on in-browser vanilla js semantic search, such as YC-Dendrolinguistics, where I implemented a cosine similarity-based information retrieval system for YC startups. LinearCosine takes this a step further by exploring ways to make these fundamental calculations more energy-efficient.\nWhat is LinearCosine? LinearCosine is my experimental project to explore the potential of the L-Mul algorithm for energy-efficient cosine similarity calculations. Here’s what it’s all about:\nL-Mul Algorithm Implementation: Adapting Luo and Sun’s approach for cosine similarity. Cosine Similarity Optimization: Applying this method to a common calculation in AI and ML. Comprehensive Benchmarking: Rigorously testing the performance against traditional methods. The Math Behind the Madness Let’s break down the key mathematical concepts:\nStandard Floating-Point Multiplication The traditional method multiplies two floating-point numbers as follows:\nMul(x,y) = (1 + x_m) * 2^(x_e) * (1 + y_m) * 2^(y_e) = (1 + x_m + y_m + x_m * y_m) * 2^(x_e + y_e) Where x_m and y_m are mantissas, and $x_e$ and $y_e$ are exponents.\nL-Mul Algorithm The L-Mul method approximates this multiplication:\nL-Mul(x,y) = (1 + x_m + y_m + 2^(-l(m))) * 2^(x_e + y_e) Where l(m) is defined as:\nl(m) = m if m ≤ 3 l(m) = 3 if m = 4 l(m) = 4 if m \u003e 4 Here, m represents the number of mantissa bits.\nThe Experiment In LinearCosine, I implemented the L-Mul algorithm and applied it to cosine similarity calculations. I then conducted extensive benchmarking to compare its performance and accuracy against traditional floating-point multiplication.\nResults: Efficiency Meets Accuracy Here’s what I found:\n1D to 1D Cosine Similarity:\nAverage time reduction: 24.55% Average L-Mul MSE: 1.9184e-05 1D to 2D Cosine Similarity:\nTime reductions ranging from 16.8% to 18.6% 2D to 2D Cosine Similarity:\nTime reductions between 21.88% and 23.12% Implications and Potential These results open up some interesting possibilities:\nPerformance Boost: The consistent speed improvements could translate to significant efficiency gains in large-scale AI operations. Accuracy-Efficiency Trade-off: While there’s a slight loss in accuracy, it’s within acceptable limits for many AI applications. Energy Efficiency Potential: The reduced computation time hints at possible energy savings, though this would need further investigation on actual hardware. Limitations and Considerations It’s important to acknowledge the limitations of this experiment:\nThis is a simplified implementation and may not capture all nuances of the original proposal. The benchmarks focus on raw computation time, which doesn’t directly translate to energy efficiency in real-world scenarios. Results may vary significantly in different hardware environments or more complex applications. Future Directions This experiment opens up several exciting avenues for further exploration:\nHardware-Specific Implementation: Testing on specialized hardware could provide more realistic efficiency metrics and potentially uncover even greater performance gains. Detailed Energy Consumption Analysis: Conducting studies with actual energy consumption measurements to quantify the potential energy savings in real-world scenarios. Optimization for Different Precision Levels: Investigating how the L-Mul algorithm performs under different precision requirements and optimizing it for specific use cases. Integration with Existing AI Frameworks: Exploring ways to integrate this approach into popular AI frameworks to make it more accessible to researchers and practitioners. Acknowledgments All credit for the L-Mul algorithm and its theoretical foundations goes to Hongyin Luo and Wei Sun, as presented in their 2024 paper. This benchmark is an independent exploration of their concepts and should not be considered an official implementation or extension of their work.\nCitation @misc{luo2024additionneedenergyefficientlanguage, title={Addition is All You Need for Energy-efficient Language Models}, author={Hongyin Luo and Wei Sun}, year={2024}, eprint={2410.00907}, archivePrefix={arXiv}, primaryClass={cs.CL}, url={https://arxiv.org/abs/2410.00907}, } Disclaimer This project is for educational purposes only. It is not intended for production use and does not claim to accurately represent the full potential or limitations of the L-Mul algorithm as proposed by Luo and Sun. You are encouraged to refer to the original paper for authoritative information.\nWrapping Up: A Step Towards Efficient AI LinearCosine represents a small but interesting step in the quest for more efficient AI computations. While it may not revolutionize the field overnight, it demonstrates the potential benefits of rethinking fundamental operations in AI models.\nIs LinearCosine going to revolutionize the AI world? Probably not. But it’s a fun exploration into the kinds of optimizations that could shape the future of energy-efficient AI. And if nothing else, it’s a great story for your next hackathon.\nP.S. If you’ve explored similar optimization techniques or have insights on energy-efficient AI computations, I’d love to hear about it! Or if you have ideas on how to extend this experiment, feel free to reach out. You can contact me at amanpriyanshusms2001[at]gmail[dot]com. Let’s continue pushing the boundaries of AI efficiency together! 🚀🧠💡\n",
+  "wordCount" : "891",
+  "inLanguage": "en",
+  "image":"https://amanpriyanshu.github.io/blogs/images/linearcosine-benchmark.png","datePublished": "2024-10-21T00:00:00Z",
+  "dateModified": "2024-10-21T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Aman Priyanshu"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Decoding AI's Evolution",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://amanpriyanshu.github.io/blogs/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://amanpriyanshu.github.io/blogs/" accesskey="h" title="Decoding AI&#39;s Evolution (Alt + H)">Decoding AI&#39;s Evolution</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://amanpriyanshu.github.io/" title="My homepage">
+                    <span>My homepage</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://amanpriyanshu.github.io/blogs/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://amanpriyanshu.github.io/blogs/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://amanpriyanshu.github.io/My-Personal-Model-Picks/" title="My Personal Model Picks">
+                    <span>My Personal Model Picks</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://amanpriyanshu.github.io/blogs/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://amanpriyanshu.github.io/blogs/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://amanpriyanshu.github.io/blogs/">Home</a>&nbsp;»&nbsp;<a href="https://amanpriyanshu.github.io/blogs/posts/">Posts</a></div>
+    <h1 class="post-title">
+      LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream
+    </h1>
+    <div class="post-meta">October 21, 2024 | 5 min | Aman Priyanshu
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#linearcosine-when-ai-researchers-decided-multiplication-was-too-mainstream" aria-label="LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream">LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream</a><ul>
+                        
+                <li>
+                    <a href="#the-paper-that-started-it-all" aria-label="The Paper That Started It All">The Paper That Started It All</a></li>
+                <li>
+                    <a href="#what-is-linearcosine" aria-label="What is LinearCosine?">What is LinearCosine?</a></li>
+                <li>
+                    <a href="#the-math-behind-the-madness" aria-label="The Math Behind the Madness">The Math Behind the Madness</a><ul>
+                        
+                <li>
+                    <a href="#standard-floating-point-multiplication" aria-label="Standard Floating-Point Multiplication">Standard Floating-Point Multiplication</a></li>
+                <li>
+                    <a href="#l-mul-algorithm" aria-label="L-Mul Algorithm">L-Mul Algorithm</a></li></ul>
+                </li>
+                <li>
+                    <a href="#the-experiment" aria-label="The Experiment">The Experiment</a></li>
+                <li>
+                    <a href="#results-efficiency-meets-accuracy" aria-label="Results: Efficiency Meets Accuracy">Results: Efficiency Meets Accuracy</a></li>
+                <li>
+                    <a href="#implications-and-potential" aria-label="Implications and Potential">Implications and Potential</a></li>
+                <li>
+                    <a href="#limitations-and-considerations" aria-label="Limitations and Considerations">Limitations and Considerations</a></li>
+                <li>
+                    <a href="#future-directions" aria-label="Future Directions">Future Directions</a></li>
+                <li>
+                    <a href="#acknowledgments" aria-label="Acknowledgments">Acknowledgments</a></li>
+                <li>
+                    <a href="#citation" aria-label="Citation">Citation</a></li>
+                <li>
+                    <a href="#disclaimer" aria-label="Disclaimer">Disclaimer</a></li>
+                <li>
+                    <a href="#wrapping-up-a-step-towards-efficient-ai" aria-label="Wrapping Up: A Step Towards Efficient AI">Wrapping Up: A Step Towards Efficient AI</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="linearcosine-when-ai-researchers-decided-multiplication-was-too-mainstream">LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream<a hidden class="anchor" aria-hidden="true" href="#linearcosine-when-ai-researchers-decided-multiplication-was-too-mainstream">#</a></h1>
+<p>Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore <a href="https://amanpriyanshu.github.io/LinearCosine/">LinearCosine, an experiment that asks: &ldquo;Do we really need multiplication for AI?&rdquo;</a></p>
+<p><strong>Quick Links to skip the talk:</strong>
+<a href="https://amanpriyanshu.github.io/LinearCosine/">Project Website - Linear Cosine</a> | <a href="https://github.com/AmanPriyanshu/LinearCosine">GitHub Repo</a> | <a href="https://arxiv.org/abs/2410.00907">Original Paper</a></p>
+<h2 id="the-paper-that-started-it-all">The Paper That Started It All<a hidden class="anchor" aria-hidden="true" href="#the-paper-that-started-it-all">#</a></h2>
+<p>During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled &ldquo;<a href="https://arxiv.org/abs/2410.00907">Addition is All You Need for Energy-efficient Language Models</a>&rdquo;. I was immediately intrigued by their approach to modify one of the core fundamental computations in AI, multiplication. This project builds upon my previous work on <a href="https://amanpriyanshu.github.io/blogs/posts/2024/startup-linguistic-trees/">in-browser vanilla js semantic search, such as YC-Dendrolinguistics</a>, where I implemented a <a href="https://amanpriyanshu.github.io/YC-Dendrolinguistics/">cosine similarity-based information retrieval system for YC startups</a>. LinearCosine takes this a step further by exploring ways to make these fundamental calculations more energy-efficient.</p>
+<h2 id="what-is-linearcosine">What is LinearCosine?<a hidden class="anchor" aria-hidden="true" href="#what-is-linearcosine">#</a></h2>
+<p>LinearCosine is my experimental project to explore the potential of the <a href="https://amanpriyanshu.github.io/LinearCosine/">L-Mul algorithm for energy-efficient cosine similarity calculations</a>. Here&rsquo;s what it&rsquo;s all about:</p>
+<ol>
+<li><strong>L-Mul Algorithm Implementation</strong>: Adapting Luo and Sun&rsquo;s approach for cosine similarity.</li>
+<li><strong>Cosine Similarity Optimization</strong>: Applying this method to a common calculation in AI and ML.</li>
+<li><strong>Comprehensive Benchmarking</strong>: Rigorously testing the performance against traditional methods.</li>
+</ol>
+<h2 id="the-math-behind-the-madness">The Math Behind the Madness<a hidden class="anchor" aria-hidden="true" href="#the-math-behind-the-madness">#</a></h2>
+<p>Let&rsquo;s break down the key mathematical concepts:</p>
+<h3 id="standard-floating-point-multiplication">Standard Floating-Point Multiplication<a hidden class="anchor" aria-hidden="true" href="#standard-floating-point-multiplication">#</a></h3>
+<p>The traditional method multiplies two floating-point numbers as follows:</p>
+<pre tabindex="0"><code>Mul(x,y) = (1 + x_m) * 2^(x_e) * (1 + y_m) * 2^(y_e) = (1 + x_m + y_m + x_m * y_m) * 2^(x_e + y_e)
+</code></pre><p>Where <code>x_m</code> and <code>y_m</code> are mantissas, and $x_e$ and $y_e$ are exponents.</p>
+<h3 id="l-mul-algorithm">L-Mul Algorithm<a hidden class="anchor" aria-hidden="true" href="#l-mul-algorithm">#</a></h3>
+<p>The L-Mul method approximates this multiplication:</p>
+<pre tabindex="0"><code>L-Mul(x,y) = (1 + x_m + y_m + 2^(-l(m))) * 2^(x_e + y_e)
+</code></pre><p>Where <code>l(m)</code> is defined as:</p>
+<pre tabindex="0"><code>l(m) = m if m ≤ 3
+l(m) = 3 if m = 4
+l(m) = 4 if m &gt; 4
+</code></pre><p>Here, <code>m</code> represents the number of mantissa bits.</p>
+<h2 id="the-experiment">The Experiment<a hidden class="anchor" aria-hidden="true" href="#the-experiment">#</a></h2>
+<p>In LinearCosine, I implemented the L-Mul algorithm and applied it to cosine similarity calculations. I then conducted extensive benchmarking to compare its performance and accuracy against traditional floating-point multiplication.</p>
+<h2 id="results-efficiency-meets-accuracy">Results: Efficiency Meets Accuracy<a hidden class="anchor" aria-hidden="true" href="#results-efficiency-meets-accuracy">#</a></h2>
+<p>Here&rsquo;s what I found:</p>
+<ol>
+<li>
+<p><strong>1D to 1D Cosine Similarity</strong>:</p>
+<ul>
+<li>Average time reduction: 24.55%</li>
+<li>Average L-Mul MSE: 1.9184e-05</li>
+</ul>
+</li>
+<li>
+<p><strong>1D to 2D Cosine Similarity</strong>:</p>
+<ul>
+<li>Time reductions ranging from 16.8% to 18.6%</li>
+</ul>
+</li>
+<li>
+<p><strong>2D to 2D Cosine Similarity</strong>:</p>
+<ul>
+<li>Time reductions between 21.88% and 23.12%</li>
+</ul>
+</li>
+</ol>
+<h2 id="implications-and-potential">Implications and Potential<a hidden class="anchor" aria-hidden="true" href="#implications-and-potential">#</a></h2>
+<p>These results open up some interesting possibilities:</p>
+<ol>
+<li><strong>Performance Boost</strong>: The consistent speed improvements could translate to significant efficiency gains in large-scale AI operations.</li>
+<li><strong>Accuracy-Efficiency Trade-off</strong>: While there&rsquo;s a slight loss in accuracy, it&rsquo;s within acceptable limits for many AI applications.</li>
+<li><strong>Energy Efficiency Potential</strong>: The reduced computation time hints at possible energy savings, though this would need further investigation on actual hardware.</li>
+</ol>
+<h2 id="limitations-and-considerations">Limitations and Considerations<a hidden class="anchor" aria-hidden="true" href="#limitations-and-considerations">#</a></h2>
+<p>It&rsquo;s important to acknowledge the limitations of this experiment:</p>
+<ol>
+<li>This is a simplified implementation and may not capture all nuances of the original proposal.</li>
+<li>The benchmarks focus on raw computation time, which doesn&rsquo;t directly translate to energy efficiency in real-world scenarios.</li>
+<li>Results may vary significantly in different hardware environments or more complex applications.</li>
+</ol>
+<h2 id="future-directions">Future Directions<a hidden class="anchor" aria-hidden="true" href="#future-directions">#</a></h2>
+<p>This experiment opens up several exciting avenues for further exploration:</p>
+<ol>
+<li><strong>Hardware-Specific Implementation</strong>: Testing on specialized hardware could provide more realistic efficiency metrics and potentially uncover even greater performance gains.</li>
+<li><strong>Detailed Energy Consumption Analysis</strong>: Conducting studies with actual energy consumption measurements to quantify the potential energy savings in real-world scenarios.</li>
+<li><strong>Optimization for Different Precision Levels</strong>: Investigating how the L-Mul algorithm performs under different precision requirements and optimizing it for specific use cases.</li>
+<li><strong>Integration with Existing AI Frameworks</strong>: Exploring ways to integrate this approach into popular AI frameworks to make it more accessible to researchers and practitioners.</li>
+</ol>
+<h2 id="acknowledgments">Acknowledgments<a hidden class="anchor" aria-hidden="true" href="#acknowledgments">#</a></h2>
+<p>All credit for the L-Mul algorithm and its theoretical foundations goes to Hongyin Luo and Wei Sun, as presented in their 2024 paper. This benchmark is an independent exploration of their concepts and should not be considered an official implementation or extension of their work.</p>
+<h2 id="citation">Citation<a hidden class="anchor" aria-hidden="true" href="#citation">#</a></h2>
+<pre tabindex="0"><code>@misc{luo2024additionneedenergyefficientlanguage,
+    title={Addition is All You Need for Energy-efficient Language Models}, 
+    author={Hongyin Luo and Wei Sun},
+    year={2024},
+    eprint={2410.00907},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2410.00907}, 
+}
+</code></pre><h2 id="disclaimer">Disclaimer<a hidden class="anchor" aria-hidden="true" href="#disclaimer">#</a></h2>
+<p>This project is for educational purposes only. It is not intended for production use and does not claim to accurately represent the full potential or limitations of the L-Mul algorithm as proposed by Luo and Sun. You are encouraged to refer to the original paper for authoritative information.</p>
+<h2 id="wrapping-up-a-step-towards-efficient-ai">Wrapping Up: A Step Towards Efficient AI<a hidden class="anchor" aria-hidden="true" href="#wrapping-up-a-step-towards-efficient-ai">#</a></h2>
+<p><a href="https://amanpriyanshu.github.io/LinearCosine/">LinearCosine</a> represents a small but interesting step in the quest for more efficient AI computations. While it may not revolutionize the field overnight, it demonstrates the potential benefits of rethinking fundamental operations in AI models.</p>
+<p>Is LinearCosine going to revolutionize the AI world? Probably not. But it&rsquo;s a fun exploration into the kinds of optimizations that could shape the future of energy-efficient AI. And if nothing else, it&rsquo;s a great story for your next hackathon.</p>
+<hr>
+<p><em>P.S. If you&rsquo;ve explored similar optimization techniques or have insights on energy-efficient AI computations, I&rsquo;d love to hear about it! Or if you have ideas on how to extend this experiment, feel free to reach out. You can contact me at amanpriyanshusms2001[at]gmail[dot]com. Let&rsquo;s continue pushing the boundaries of AI efficiency together!</em> 🚀🧠💡</p>
+
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://amanpriyanshu.github.io/blogs/tags/linearcosine/">LinearCosine</a></li>
+      <li><a href="https://amanpriyanshu.github.io/blogs/tags/l-mul-algorithm/">L-Mul Algorithm</a></li>
+      <li><a href="https://amanpriyanshu.github.io/blogs/tags/cosine-similarity/">Cosine Similarity</a></li>
+      <li><a href="https://amanpriyanshu.github.io/blogs/tags/energy-efficient-ai/">Energy-Efficient AI</a></li>
+      <li><a href="https://amanpriyanshu.github.io/blogs/tags/benchmarking/">Benchmarking</a></li>
+      <li><a href="https://amanpriyanshu.github.io/blogs/tags/green-ai/">Green-AI</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/">
+    <span class="title">Next Page »</span>
+    <br>
+    <span>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction</span>
+  </a>
+</nav>
+
+<div class="share-buttons">
+    <a target="_blank" rel="noopener noreferrer" aria-label="share LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream on twitter"
+        href="https://twitter.com/intent/tweet/?text=LinearCosine%3a%20When%20AI%20Researchers%20Decided%20Multiplication%20was%20Too%20Mainstream&amp;url=https%3a%2f%2famanpriyanshu.github.io%2fblogs%2fposts%2f2024%2flinear-cosine%2f&amp;hashtags=LinearCosine%2cL-MulAlgorithm%2cCosineSimilarity%2cEnergy-EfficientAI%2cBenchmarking%2cGreen-AI">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream on linkedin"
+        href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2famanpriyanshu.github.io%2fblogs%2fposts%2f2024%2flinear-cosine%2f&amp;title=LinearCosine%3a%20When%20AI%20Researchers%20Decided%20Multiplication%20was%20Too%20Mainstream&amp;summary=LinearCosine%3a%20When%20AI%20Researchers%20Decided%20Multiplication%20was%20Too%20Mainstream&amp;source=https%3a%2f%2famanpriyanshu.github.io%2fblogs%2fposts%2f2024%2flinear-cosine%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream on reddit"
+        href="https://reddit.com/submit?url=https%3a%2f%2famanpriyanshu.github.io%2fblogs%2fposts%2f2024%2flinear-cosine%2f&title=LinearCosine%3a%20When%20AI%20Researchers%20Decided%20Multiplication%20was%20Too%20Mainstream">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream on facebook"
+        href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2famanpriyanshu.github.io%2fblogs%2fposts%2f2024%2flinear-cosine%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream on whatsapp"
+        href="https://api.whatsapp.com/send?text=LinearCosine%3a%20When%20AI%20Researchers%20Decided%20Multiplication%20was%20Too%20Mainstream%20-%20https%3a%2f%2famanpriyanshu.github.io%2fblogs%2fposts%2f2024%2flinear-cosine%2f">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+        </svg>
+    </a>
+    <a target="_blank" rel="noopener noreferrer" aria-label="share LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream on telegram"
+        href="https://telegram.me/share/url?text=LinearCosine%3a%20When%20AI%20Researchers%20Decided%20Multiplication%20was%20Too%20Mainstream&amp;url=https%3a%2f%2famanpriyanshu.github.io%2fblogs%2fposts%2f2024%2flinear-cosine%2f">
+        <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28">
+            <path
+                d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span></span>
+    
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+
+
+
+</html>
+

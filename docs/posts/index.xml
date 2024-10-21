@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/</link>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/</guid>
+      <description>LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&amp;rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore LinearCosine, an experiment that asks: &amp;ldquo;Do we really need multiplication for AI?&amp;rdquo;
+Quick Links to skip the talk: Project Website - Linear Cosine | GitHub Repo | Original Paper
+The Paper That Started It All During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled &amp;ldquo;Addition is All You Need for Energy-efficient Language Models&amp;rdquo;.</description>
+    </item>
+    
     <item>
       <title>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction</title>
       <link>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</link>
