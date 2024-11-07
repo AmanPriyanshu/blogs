@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contra-Topic-bottleneck-t5: Efficient Topic Extraction Without the Computational Overhead</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/</link>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/</guid>
+      <description>Quick Links: Model on HuggingFace | Interactive Demo
+When it comes to topic extraction, the AI world seems fixated on massive models and expensive compute. But what if there was a simpler way? 🤔
+The Genesis: Simplicity Through Linear Transformation Picture this: There I was, looking for an open-source solution to extract topics from text at scale. The available options were either massive language models or complex fine-tuning pipelines. That&amp;rsquo;s when it hit me – what if we could leverage the semantic structure of existing embeddings with just a linear transformation?</description>
+    </item>
+    
     <item>
       <title>LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream</title>
       <link>https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/</link>
