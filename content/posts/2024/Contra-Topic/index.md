@@ -43,6 +43,8 @@ Here's how it performs across different domains:
 
 These metrics show consistent performance across domains while maintaining clear topic separation.
 
+_\* Edit: I recently created a dataset for dynamic topic modeling with more diverse content sources. Check out the blog about this [100K-document hierarchical dataset here](https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/)_
+
 ## Implementation: Straightforward and Efficient
 
 Here's a complete example of how to use the model:

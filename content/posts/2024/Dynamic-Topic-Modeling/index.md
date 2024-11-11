@@ -67,7 +67,7 @@ This dataset addresses several key needs:
 
 2. **Hierarchical Understanding**: Enables analysis at multiple levels of granularity
 
-3. **Training Data**: Perfect for fine-tuning smaller models for topic prediction
+3. **Training Data**: Perfect for fine-tuning smaller models for topic prediction. Previously, I've worked on [transformer-models for dynamic topic-modeling](https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/), however, lacked a well-defined dataset which this fills.
 
 4. **Content Organization**: Helps build better document classification systems
 
