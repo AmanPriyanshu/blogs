@@ -11,9 +11,9 @@ cover:
 **Quick Links:**
 [Dataset on HuggingFace](https://huggingface.co/datasets/AmanPriyanshu/Dynamic-Topic-RedPajama-Data-1T-100k-SubSample-max-1k-tokens) | [Interactive Demo](https://colab.research.google.com/drive/1_SuTiL3QS-PUYjSrugqqD5mQlMv8Hbfc?usp=sharing)
 
-<!-- <div style="display: flex; justify-content: space-between;">
-  <img src="https://raw.githubusercontent.com/AmanPriyanshu/blogs/refs/heads/main/content/posts/2024/Contra-Topic/images/contra-topic-banner.png" alt="Topic Modeling" style="width: 96%;"/>
-</div> -->
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://raw.githubusercontent.com/AmanPriyanshu/blogs/refs/heads/main/content/posts/2024/Dynamic-Topic-Modeling/images/dynamic-topics-banner.png" alt="Dynamic Topic Modeling" style="width: 96%;"/>
+</div>
 
 ## The Topic Modeling Challenge
 
