@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/categories/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/categories/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Teaching AI to Read and Group Like I Bookmark the Web: A Journey into Dynamic Topic Modeling</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/</link>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/</guid>
+      <description>Quick Links: Dataset on HuggingFace | Interactive Demo
+The Topic Modeling Challenge You know that feeling when you have 50 browser tabs open, and you&amp;rsquo;re desperately trying to organize them into bookmark folders? &amp;ldquo;ML Papers To Read,&amp;rdquo; &amp;ldquo;Funny Cat Videos,&amp;rdquo; &amp;ldquo;Recipes I&amp;rsquo;ll Never Make&amp;rdquo;&amp;hellip; We all have our system. And apparently, it&amp;rsquo;s such a universal problem that every tech company is launching their own solution - Arc Browser with its &amp;ldquo;Spaces,&amp;rdquo; Chrome with its tab groups, and about 500 extensions promising to color-code your digital hoarding habits into submission.</description>
+    </item>
+    
     <item>
       <title>Contra-Topic-bottleneck-t5: Efficient Topic Extraction Without the Computational Overhead</title>
       <link>https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/</link>

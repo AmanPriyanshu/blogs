@@ -2,16 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://amanpriyanshu.github.io/blogs/categories/ai-development/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/categories/ai-research/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/categories/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/dataset/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/categories/dataset-creation/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/large-language-models/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/natural-language-processing/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/categories/natural-language-processing/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/nlp/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/openai/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/posts/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/redpajama/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/topic-extraction/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/tags/topic-modeling/</loc>
+    <lastmod>2024-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/tags/efficiency/</loc>
@@ -23,22 +65,7 @@
     <loc>https://amanpriyanshu.github.io/blogs/categories/model-optimization/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/categories/natural-language-processing/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/tags/nlp/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/posts/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/tags/t5/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/tags/</loc>
-    <lastmod>2024-11-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/tags/topic-extraction/</loc>
     <lastmod>2024-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/categories/algorithm-optimization/</loc>
@@ -77,9 +104,6 @@
     <loc>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</loc>
     <lastmod>2024-09-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/categories/ai-development/</loc>
-    <lastmod>2024-09-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/tags/domain-adaptation/</loc>
     <lastmod>2024-09-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -110,9 +134,6 @@
     <loc>https://amanpriyanshu.github.io/blogs/tags/javascript/</loc>
     <lastmod>2024-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/tags/openai/</loc>
-    <lastmod>2024-09-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/tags/togetherai/</loc>
     <lastmod>2024-09-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -126,9 +147,6 @@
     <lastmod>2024-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/categories/linguistics/</loc>
-    <lastmod>2024-09-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://amanpriyanshu.github.io/blogs/tags/natural-language-processing/</loc>
     <lastmod>2024-09-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amanpriyanshu.github.io/blogs/tags/on-prem/</loc>
