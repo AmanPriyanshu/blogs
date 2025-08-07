@@ -2,18 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI Research on Decoding AI&#39;s Evolution</title>
-    <link>http://localhost:1313/blogs/categories/ai-research/</link>
+    <link>https://amanpriyanshu.github.io/blogs/categories/ai-research/</link>
     <description>Recent content in AI Research on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/categories/ai-research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/categories/ai-research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating 2D Spatial Reasoning Data Without LLMs / VLMs: A Deterministic Curriculum Trial</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2025/mazesolver-grpo-data/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2025/mazesolver-grpo-data/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Quick Links:&lt;/strong&gt;
+&lt;a href=&#34;https://github.com/AmanPriyanshu/Tiny-Maze-Mock-GRPO&#34;&gt;GitHub Repository&lt;/a&gt; | &lt;a href=&#34;https://huggingface.co/datasets/AmanPriyanshu/Tiny-Maze-Mock-GRPO&#34;&gt;Dataset Sample&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Spatial reasoning remains a significant challenge for language models, particularly in tasks requiring 2D navigation and visual-spatial understanding. Current approaches typically rely on either training large vision-language models (VLMs) on visual data or using language models to generate training examples through expensive API calls.&lt;/p&gt;
+&lt;p&gt;This post explores what might be considered an unconventional (and possibly naive) approach: &lt;strong&gt;deterministic generation of spatial reasoning data&lt;/strong&gt; without requiring any LLMs or VLMs in the data creation process. Rather than using models to generate training examples, this experiment algorithmically creates what we hope are realistic learning trajectories that simulate how spatial reasoning competency might develop over time.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Teaching AI to Read and Group Like I Bookmark the Web: A Journey into Dynamic Topic Modeling</title>
-      <link>http://localhost:1313/blogs/posts/2024/dynamic-topic-modeling/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/</link>
       <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/dynamic-topic-modeling/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Quick Links:&lt;/strong&gt;
 &lt;a href=&#34;https://huggingface.co/datasets/AmanPriyanshu/Dynamic-Topic-RedPajama-Data-1T-100k-SubSample-max-1k-tokens&#34;&gt;Dataset on HuggingFace&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&#34;display: flex; justify-content: space-between;&#34;&gt;
@@ -25,10 +38,10 @@
     
     <item>
       <title>Contra-Topic-bottleneck-t5: Efficient Topic Extraction Without the Computational Overhead</title>
-      <link>http://localhost:1313/blogs/posts/2024/contra-topic/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/contra-topic/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/contra-topic/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Quick Links:&lt;/strong&gt;
 &lt;a href=&#34;https://huggingface.co/AmanPriyanshu/Contra-Topic-bottleneck-t5-large&#34;&gt;Model on HuggingFace&lt;/a&gt; | &lt;a href=&#34;https://colab.research.google.com/drive/1_SuTiL3QS-PUYjSrugqqD5mQlMv8Hbfc?usp=sharing&#34;&gt;Interactive Demo&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;When it comes to topic extraction, the AI world seems fixated on massive models and expensive compute. But what if there was a simpler way? 🤔&lt;/p&gt;
@@ -41,10 +54,10 @@
     
     <item>
       <title>LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream</title>
-      <link>http://localhost:1313/blogs/posts/2024/linear-cosine/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/</link>
       <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/linear-cosine/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/</guid>
       <description>&lt;p&gt;Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&amp;rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore &lt;a href=&#34;https://amanpriyanshu.github.io/LinearCosine/&#34;&gt;LinearCosine, an experiment that asks: &amp;ldquo;Do we really need multiplication for AI?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Quick Links to skip the talk:&lt;/strong&gt;
 &lt;a href=&#34;https://amanpriyanshu.github.io/LinearCosine/&#34;&gt;Project Website - Linear Cosine&lt;/a&gt; | &lt;a href=&#34;https://github.com/AmanPriyanshu/LinearCosine&#34;&gt;GitHub Repo&lt;/a&gt; | &lt;a href=&#34;https://arxiv.org/abs/2410.00907&#34;&gt;Original Paper&lt;/a&gt;&lt;/p&gt;
@@ -54,10 +67,10 @@
     
     <item>
       <title>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction</title>
-      <link>http://localhost:1313/blogs/posts/2024/adaptkeybert/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/adaptkeybert/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</guid>
       <description>&lt;div style=&#34;display: flex; justify-content: space-between;&#34;&gt;
   &lt;img src=&#34;https://amanpriyanshu.github.io/AdaptKeyBERT/images/adaptkeybert_revisited.png&#34; alt=&#34;Running Demo 1&#34; style=&#34;width: 90%;&#34;/&gt;
 &lt;/div&gt;
@@ -69,10 +82,10 @@
     
     <item>
       <title>YC-Dendrolinguistics: Planting Linguistic Trees in the Startup Forest</title>
-      <link>http://localhost:1313/blogs/posts/2024/startup-linguistic-trees/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/startup-linguistic-trees/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/startup-linguistic-trees/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/startup-linguistic-trees/</guid>
       <description>&lt;p&gt;Hey there, fellow AI adventurers and startup enthusiasts! 🌳🚀 Today, I&amp;rsquo;m excited to give you a peek into my latest passion project: YC-Dendrolinguistics. Buckle up as we embark on a journey through the linguistic forests of Y-Combinator pitches!&lt;/p&gt;
 &lt;h2 id=&#34;the-seed-of-an-idea&#34;&gt;The Seed of an Idea&lt;/h2&gt;
 &lt;p&gt;Picture this: It&amp;rsquo;s 2 AM, I&amp;rsquo;m knee-deep in YC application videos, and suddenly it hits me – what if startup pitches are like trees? 🤔 Each word a branch, each phrase a limb, growing into this complex organism we call a pitch. That&amp;rsquo;s when YC-Dendrolinguistics was born, my wild attempt to map the DNA of startup communication.&lt;/p&gt;</description>
@@ -80,10 +93,10 @@
     
     <item>
       <title>Synaptic Sparks: Why I&#39;m Wiring My Thoughts into a Neural Blogosphere</title>
-      <link>http://localhost:1313/blogs/posts/2024/synaptic-sparks/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/synaptic-sparks/</link>
       <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/synaptic-sparks/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/synaptic-sparks/</guid>
       <description>&lt;p&gt;Hey there, fellow AI enthusiasts and curious minds! 🧠🤖 Today, I just want to document what&amp;rsquo;s leading to this new adventure in regular blogging.&lt;/p&gt;
 &lt;h2 id=&#34;the-knowledge-synapse&#34;&gt;The Knowledge Synapse&lt;/h2&gt;
 &lt;p&gt;Picture me back in 2019, a wide-eyed novice bouncing around the vast landscape of machine learning. I was devouring every GitHub gist, Medium post, and arXiv paper I could find, growing and learning at a dizzying pace. Fast forward to today, and it feels like I&amp;rsquo;ve stepped into an alternate universe. So much of that knowledge that shaped me is now locked behind paywalls, long arduous youtube playlists, feeling almost alien to the very person who spent countless hours absorbing it.&lt;/p&gt;</description>
@@ -91,10 +104,10 @@
     
     <item>
       <title>FRACTURED-SORRY-Bench: Unraveling AI Safety through Decomposing Malicious Intents</title>
-      <link>http://localhost:1313/blogs/posts/2024/fractured-sorry-bench/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/fractured-sorry-bench/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</guid>
       <description>&lt;p&gt;Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the &lt;a href=&#34;https://huggingface.co/datasets/AmanPriyanshu/FRACTURED-SORRY-Bench&#34;&gt;dataset&lt;/a&gt;, &lt;a href=&#34;https://amanpriyanshu.github.io/FRACTURED-SORRY-Bench/&#34;&gt;website&lt;/a&gt;, and &lt;a href=&#34;https://github.com/AmanPriyanshu/FRACTURED-SORRY-Bench/&#34;&gt;github&lt;/a&gt; for the dataset!&lt;/p&gt;
 &lt;h2 id=&#34;the-fractured-sorry-saga-a-tale-of-adaptation-and-decomposition&#34;&gt;The FRACTURED-SORRY Saga: A Tale of Adaptation and Decomposition&lt;/h2&gt;
 &lt;p&gt;Picture this: you&amp;rsquo;re wandering through the lush collection of prompt-injection and llm-red-teaming papers, marveling at some of the weird and some of the crazier attack mechanisms that have been released recently. When suddenly, you realize that there aren&amp;rsquo;t many Proof-of-Concept resources for multi-shot red-teaming. That&amp;rsquo;s essentially the story behind creating FRACTURED-SORRY-Bench.&lt;/p&gt;</description>

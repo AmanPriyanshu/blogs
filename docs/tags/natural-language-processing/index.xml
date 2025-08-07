@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Natural Language Processing on Decoding AI&#39;s Evolution</title>
-    <link>http://localhost:1313/blogs/tags/natural-language-processing/</link>
+    <link>https://amanpriyanshu.github.io/blogs/tags/natural-language-processing/</link>
     <description>Recent content in Natural Language Processing on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Teaching AI to Read and Group Like I Bookmark the Web: A Journey into Dynamic Topic Modeling</title>
-      <link>http://localhost:1313/blogs/posts/2024/dynamic-topic-modeling/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/</link>
       <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/dynamic-topic-modeling/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/dynamic-topic-modeling/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Quick Links:&lt;/strong&gt;
 &lt;a href=&#34;https://huggingface.co/datasets/AmanPriyanshu/Dynamic-Topic-RedPajama-Data-1T-100k-SubSample-max-1k-tokens&#34;&gt;Dataset on HuggingFace&lt;/a&gt;&lt;/p&gt;
 &lt;div style=&#34;display: flex; justify-content: space-between;&#34;&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>YC-Dendrolinguistics: Planting Linguistic Trees in the Startup Forest</title>
-      <link>http://localhost:1313/blogs/posts/2024/startup-linguistic-trees/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/startup-linguistic-trees/</link>
       <pubDate>Thu, 12 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/startup-linguistic-trees/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/startup-linguistic-trees/</guid>
       <description>&lt;p&gt;Hey there, fellow AI adventurers and startup enthusiasts! 🌳🚀 Today, I&amp;rsquo;m excited to give you a peek into my latest passion project: YC-Dendrolinguistics. Buckle up as we embark on a journey through the linguistic forests of Y-Combinator pitches!&lt;/p&gt;
 &lt;h2 id=&#34;the-seed-of-an-idea&#34;&gt;The Seed of an Idea&lt;/h2&gt;
 &lt;p&gt;Picture this: It&amp;rsquo;s 2 AM, I&amp;rsquo;m knee-deep in YC application videos, and suddenly it hits me – what if startup pitches are like trees? 🤔 Each word a branch, each phrase a limb, growing into this complex organism we call a pitch. That&amp;rsquo;s when YC-Dendrolinguistics was born, my wild attempt to map the DNA of startup communication.&lt;/p&gt;</description>

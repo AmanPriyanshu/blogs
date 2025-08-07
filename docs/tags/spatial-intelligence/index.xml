@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spatial Intelligence on Decoding AI&#39;s Evolution</title>
+    <link>https://amanpriyanshu.github.io/blogs/tags/spatial-intelligence/</link>
+    <description>Recent content in Spatial Intelligence on Decoding AI&#39;s Evolution</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright> </copyright>
+    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/spatial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating 2D Spatial Reasoning Data Without LLMs / VLMs: A Deterministic Curriculum Trial</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2025/mazesolver-grpo-data/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2025/mazesolver-grpo-data/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Quick Links:&lt;/strong&gt;
+&lt;a href=&#34;https://github.com/AmanPriyanshu/Tiny-Maze-Mock-GRPO&#34;&gt;GitHub Repository&lt;/a&gt; | &lt;a href=&#34;https://huggingface.co/datasets/AmanPriyanshu/Tiny-Maze-Mock-GRPO&#34;&gt;Dataset Sample&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Spatial reasoning remains a significant challenge for language models, particularly in tasks requiring 2D navigation and visual-spatial understanding. Current approaches typically rely on either training large vision-language models (VLMs) on visual data or using language models to generate training examples through expensive API calls.&lt;/p&gt;
+&lt;p&gt;This post explores what might be considered an unconventional (and possibly naive) approach: &lt;strong&gt;deterministic generation of spatial reasoning data&lt;/strong&gt; without requiring any LLMs or VLMs in the data creation process. Rather than using models to generate training examples, this experiment algorithmically creates what we hope are realistic learning trajectories that simulate how spatial reasoning competency might develop over time.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

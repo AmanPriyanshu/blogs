@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zero-Shot on Decoding AI&#39;s Evolution</title>
-    <link>http://localhost:1313/blogs/tags/zero-shot/</link>
+    <link>https://amanpriyanshu.github.io/blogs/tags/zero-shot/</link>
     <description>Recent content in Zero-Shot on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/tags/zero-shot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/zero-shot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction</title>
-      <link>http://localhost:1313/blogs/posts/2024/adaptkeybert/</link>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blogs/posts/2024/adaptkeybert/</guid>
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</guid>
       <description>&lt;div style=&#34;display: flex; justify-content: space-between;&#34;&gt;
   &lt;img src=&#34;https://amanpriyanshu.github.io/AdaptKeyBERT/images/adaptkeybert_revisited.png&#34; alt=&#34;Running Demo 1&#34; style=&#34;width: 90%;&#34;/&gt;
 &lt;/div&gt;
