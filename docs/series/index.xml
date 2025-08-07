@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Decoding AI&#39;s Evolution</title>
-    <link>https://amanpriyanshu.github.io/blogs/series/</link>
+    <link>http://localhost:1313/blogs/series/</link>
     <description>Recent content in Series on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright> </copyright><atom:link href="https://amanpriyanshu.github.io/blogs/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright> </copyright><atom:link href="http://localhost:1313/blogs/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

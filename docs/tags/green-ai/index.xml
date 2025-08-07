@@ -2,21 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Green-AI on Decoding AI&#39;s Evolution</title>
-    <link>https://amanpriyanshu.github.io/blogs/tags/green-ai/</link>
+    <link>http://localhost:1313/blogs/tags/green-ai/</link>
     <description>Recent content in Green-AI on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/green-ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/tags/green-ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LinearCosine: When AI Researchers Decided Multiplication was Too Mainstream</title>
-      <link>https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/</link>
+      <link>http://localhost:1313/blogs/posts/2024/linear-cosine/</link>
       <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/linear-cosine/</guid>
-      <description>Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&amp;rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore LinearCosine, an experiment that asks: &amp;ldquo;Do we really need multiplication for AI?&amp;rdquo;
-Quick Links to skip the talk: Project Website - Linear Cosine | GitHub Repo | Original Paper
-The Paper That Started It All During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled &amp;ldquo;Addition is All You Need for Energy-efficient Language Models&amp;rdquo;.</description>
+      <guid>http://localhost:1313/blogs/posts/2024/linear-cosine/</guid>
+      <description>&lt;p&gt;Hey there, optimization seekers and efficiency enthusiasts! 📊🧮 Today, we&amp;rsquo;re diving into a world where even basic arithmetic operations are up for debate. Buckle up as we explore &lt;a href=&#34;https://amanpriyanshu.github.io/LinearCosine/&#34;&gt;LinearCosine, an experiment that asks: &amp;ldquo;Do we really need multiplication for AI?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quick Links to skip the talk:&lt;/strong&gt;
+&lt;a href=&#34;https://amanpriyanshu.github.io/LinearCosine/&#34;&gt;Project Website - Linear Cosine&lt;/a&gt; | &lt;a href=&#34;https://github.com/AmanPriyanshu/LinearCosine&#34;&gt;GitHub Repo&lt;/a&gt; | &lt;a href=&#34;https://arxiv.org/abs/2410.00907&#34;&gt;Original Paper&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-paper-that-started-it-all&#34;&gt;The Paper That Started It All&lt;/h2&gt;
+&lt;p&gt;During my fall break, while I was supposed to be relaxing, my roommate Yash Maurya forwarded me a fascinating paper by Hongyin Luo and Wei Sun titled &amp;ldquo;&lt;a href=&#34;https://arxiv.org/abs/2410.00907&#34;&gt;Addition is All You Need for Energy-efficient Language Models&lt;/a&gt;&amp;rdquo;. I was immediately intrigued by their approach to modify one of the core fundamental computations in AI, multiplication. This project builds upon my previous work on &lt;a href=&#34;https://amanpriyanshu.github.io/blogs/posts/2024/startup-linguistic-trees/&#34;&gt;in-browser vanilla js semantic search, such as YC-Dendrolinguistics&lt;/a&gt;, where I implemented a &lt;a href=&#34;https://amanpriyanshu.github.io/YC-Dendrolinguistics/&#34;&gt;cosine similarity-based information retrieval system for YC startups&lt;/a&gt;. LinearCosine takes this a step further by exploring ways to make these fundamental calculations more energy-efficient.&lt;/p&gt;</description>
     </item>
     
   </channel>

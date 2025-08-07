@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Gemini on Decoding AI&#39;s Evolution</title>
-    <link>https://amanpriyanshu.github.io/blogs/tags/google-gemini/</link>
+    <link>http://localhost:1313/blogs/tags/google-gemini/</link>
     <description>Recent content in Google Gemini on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/google-gemini/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/tags/google-gemini/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>API-LLM-Hub: Simplifying LLM-API integration for Static Pages</title>
-      <link>https://amanpriyanshu.github.io/blogs/posts/2024/api-llm-hub/</link>
+      <link>http://localhost:1313/blogs/posts/2024/api-llm-hub/</link>
       <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/api-llm-hub/</guid>
-      <description>Hey there, fellow code enthusiasts and AI wranglers! 🖐️🤖 You know that feeling when you&amp;rsquo;re knee-deep in a project, trying to get multiple AI models to play nice in your browser? Yeah, I&amp;rsquo;ve been there. Cue the frustrated sighs, the endless searches over GitHub issues 😢, and the &amp;ldquo;why-isn&amp;rsquo;t-this-working&amp;rdquo; hair-pulling sessions.
-LINK-TO-PACKAGE just in case you wanna skip the deets
-After one too many nights wrestling with backends, CORS issues, and the general chaos of integrating various AI APIs, I decided enough was enough.</description>
+      <guid>http://localhost:1313/blogs/posts/2024/api-llm-hub/</guid>
+      <description>&lt;p&gt;Hey there, fellow code enthusiasts and AI wranglers! 🖐️🤖 You know that feeling when you&amp;rsquo;re knee-deep in a project, trying to get multiple AI models to play nice in your browser? Yeah, I&amp;rsquo;ve been there. Cue the frustrated sighs, the endless searches over GitHub issues 😢, and the &amp;ldquo;why-isn&amp;rsquo;t-this-working&amp;rdquo; hair-pulling sessions.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://amanpriyanshu.github.io/API-LLM-Hub/&#34;&gt;&lt;strong&gt;LINK-TO-PACKAGE&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;just in case you wanna skip the deets&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;After one too many nights wrestling with backends, CORS issues, and the general chaos of integrating various AI APIs, I decided enough was enough. There had to be a simpler way, right? Something that didn&amp;rsquo;t require installing a bunch of npm builds, juggling APIs, or managing a backend server farm just to get a chatbot running on a static page.&lt;/p&gt;</description>
     </item>
     
   </channel>

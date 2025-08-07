@@ -2,22 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Keyword Extraction on Decoding AI&#39;s Evolution</title>
-    <link>https://amanpriyanshu.github.io/blogs/tags/keyword-extraction/</link>
+    <link>http://localhost:1313/blogs/tags/keyword-extraction/</link>
     <description>Recent content in Keyword Extraction on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/tags/keyword-extraction/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/tags/keyword-extraction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AdaptKeyBERT: Stumbling Through Two Years of Keyword Extraction</title>
-      <link>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</link>
+      <link>http://localhost:1313/blogs/posts/2024/adaptkeybert/</link>
       <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/adaptkeybert/</guid>
-      <description>Quick links (in case you want to skip my ramblings):
-PyPI Package GitHub Repository
-Alright, gather &amp;lsquo;round, word enthusiasts and syntax sorcerers! 🧙‍♂️📚 Remember that time you tried to explain machine learning to your grandma and ended up comparing neural networks to her knitting patterns? Well, buckle up, because we&amp;rsquo;re about to dive into a similar realm of &amp;ldquo;What was I thinking?&amp;rdquo; – the saga of AdaptKeyBERT.
-It&amp;rsquo;s been two trips around the sun since I cobbled together this quirky little keyword extractor and sent it off into the wild world of NLP.</description>
+      <guid>http://localhost:1313/blogs/posts/2024/adaptkeybert/</guid>
+      <description>&lt;div style=&#34;display: flex; justify-content: space-between;&#34;&gt;
+  &lt;img src=&#34;https://amanpriyanshu.github.io/AdaptKeyBERT/images/adaptkeybert_revisited.png&#34; alt=&#34;Running Demo 1&#34; style=&#34;width: 90%;&#34;/&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Quick links (in case you want to skip my ramblings):&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pypi.org/project/adaptkeybert/&#34;&gt;PyPI Package&lt;/a&gt;
+&lt;a href=&#34;https://github.com/AmanPriyanshu/AdaptKeyBERT&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Alright, gather &amp;lsquo;round, word enthusiasts and syntax sorcerers! 🧙‍♂️📚 Remember that time you tried to explain machine learning to your grandma and ended up comparing neural networks to her knitting patterns? Well, buckle up, because we&amp;rsquo;re about to dive into a similar realm of &amp;ldquo;What was I thinking?&amp;rdquo; – the saga of AdaptKeyBERT.&lt;/p&gt;</description>
     </item>
     
   </channel>

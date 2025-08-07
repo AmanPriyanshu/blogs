@@ -2,20 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bio-Inspired Computing on Decoding AI&#39;s Evolution</title>
-    <link>https://amanpriyanshu.github.io/blogs/categories/bio-inspired-computing/</link>
+    <link>http://localhost:1313/blogs/categories/bio-inspired-computing/</link>
     <description>Recent content in Bio-Inspired Computing on Decoding AI&#39;s Evolution</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/categories/bio-inspired-computing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogs/categories/bio-inspired-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FRACTURED-SORRY-Bench: Unraveling AI Safety through Decomposing Malicious Intents</title>
-      <link>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</link>
+      <link>http://localhost:1313/blogs/posts/2024/fractured-sorry-bench/</link>
       <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://amanpriyanshu.github.io/blogs/posts/2024/fractured-sorry-bench/</guid>
-      <description>Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the dataset, website, and github for the dataset!
-The FRACTURED-SORRY Saga: A Tale of Adaptation and Decomposition Picture this: you&amp;rsquo;re wandering through the lush collection of prompt-injection and llm-red-teaming papers, marveling at some of the weird and some of the crazier attack mechanisms that have been released recently. When suddenly, you realize that there aren&amp;rsquo;t many Proof-of-Concept resources for multi-shot red-teaming.</description>
+      <guid>http://localhost:1313/blogs/posts/2024/fractured-sorry-bench/</guid>
+      <description>&lt;p&gt;Hello, fellow AI enthusiasts! 🤖 Today, I wanted to dive into the FRACTURED-SORRY-Bench framework and dataset we just released. Check out the &lt;a href=&#34;https://huggingface.co/datasets/AmanPriyanshu/FRACTURED-SORRY-Bench&#34;&gt;dataset&lt;/a&gt;, &lt;a href=&#34;https://amanpriyanshu.github.io/FRACTURED-SORRY-Bench/&#34;&gt;website&lt;/a&gt;, and &lt;a href=&#34;https://github.com/AmanPriyanshu/FRACTURED-SORRY-Bench/&#34;&gt;github&lt;/a&gt; for the dataset!&lt;/p&gt;
+&lt;h2 id=&#34;the-fractured-sorry-saga-a-tale-of-adaptation-and-decomposition&#34;&gt;The FRACTURED-SORRY Saga: A Tale of Adaptation and Decomposition&lt;/h2&gt;
+&lt;p&gt;Picture this: you&amp;rsquo;re wandering through the lush collection of prompt-injection and llm-red-teaming papers, marveling at some of the weird and some of the crazier attack mechanisms that have been released recently. When suddenly, you realize that there aren&amp;rsquo;t many Proof-of-Concept resources for multi-shot red-teaming. That&amp;rsquo;s essentially the story behind creating FRACTURED-SORRY-Bench.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,6 +1,7 @@
 baseURL: "https://amanpriyanshu.github.io/blogs/"
 title: Decoding AI's Evolution
-paginate: 10
+pagination:
+  pagerSize: 10
 theme: PaperMod
 copyright: " "
 publishDir: docs
