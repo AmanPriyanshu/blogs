@@ -7,13 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Research</title>
       <link>https://amanpriyanshu.github.io/blogs/categories/ai-research/</link>
-      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
       
       <guid>https://amanpriyanshu.github.io/blogs/categories/ai-research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dataset Analysis</title>
+      <link>https://amanpriyanshu.github.io/blogs/categories/dataset-analysis/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/categories/dataset-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthetic Data</title>
+      <link>https://amanpriyanshu.github.io/blogs/categories/synthetic-data/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/categories/synthetic-data/</guid>
       <description></description>
     </item>
     

@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright> </copyright>
-    <lastBuildDate>Thu, 16 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://amanpriyanshu.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DeepSeek&#39;s Reasoning Memotypes: Could Linguistic Patterns Be Replicating Through Synthetic Data?</title>
+      <link>https://amanpriyanshu.github.io/blogs/posts/2025/deepseek-reasoning-memotypes/</link>
+      <pubDate>Tue, 12 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://amanpriyanshu.github.io/blogs/posts/2025/deepseek-reasoning-memotypes/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Analysis Code:&lt;/strong&gt; &lt;a href=&#34;https://gist.github.com/AmanPriyanshu/431df2cefe60386b0fc9cb66802b70d4&#34;&gt;GitHub Gist&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In biology, DNA provides the blueprint for how organisms develop and reproduce. In the realm of synthetic reasoning data, we observe a similar phenomenon: specific linguistic patterns that function as &amp;ldquo;reasoning memotypes&amp;rdquo;—self-replicating units of thought structure that propagate through synthetic data generation.&lt;/p&gt;
+&lt;p&gt;Analysis of Nvidia&amp;rsquo;s Nemotron post-training dataset^[1], which contains over 30 million synthetic examples generated using DeepSeek R1^[2] and other reasoning models, reveals systematic linguistic patterns that appear with extraordinary frequency. These patterns function like genetic code for reasoning behavior, encoding not just what models think, but how they structure and express thought itself.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Creating 2D Spatial Reasoning Data Without LLMs / VLMs: A Deterministic Curriculum Trial</title>
       <link>https://amanpriyanshu.github.io/blogs/posts/2025/mazesolver-grpo-data/</link>
